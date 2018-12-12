@@ -91,35 +91,30 @@ API nodes:
 
 支持 `get actions` ( filter-on=* ) 的API:
 ```
-https://api-kylin.eoslaomao.com/v1/chain/get_info
-https://api-kylin.eosasia.one/v1/chain/get_info
-https://api-kylin.meet.one/v1/chain/get_info
+
 ```
 
 ## 水龙头
 
-在 `cryptokylin` 上创建账号非常简单:
+在 `bos` 上创建账号非常简单:
 
 #### 免费账号
-创建免费账号: http://faucet.cryptokylin.io/create_account?new_account_name
+创建免费账号: http://faucet.   /create_account?new_account_name
 
 例子:
 ```
-curl http://faucet.cryptokylin.io/create_account\?111111111ooo
+curl http://faucet.   /create_account\?111111111ooo
 ```
 
 #### 获得免费Token
-获得免费Token: http://faucet.cryptokylin.io/get_token?your_account_name. 
+获得免费Token: http://faucet.   /get_token?your_account_name. 
 每一次调用能获得100EOS, 每天最多获得1000个EOS.
 
 例子:
 ``` 
-curl http://faucet.cryptokylin.io/get_token?111111111ooo
+curl http://faucet.  /get_token?111111111ooo
 ```
-或者
-```
-curl http://52.68.57.226/get_token?111111111ooo
-```
+
 
 ## 备份文件
 
@@ -127,35 +122,14 @@ curl http://52.68.57.226/get_token?111111111ooo
 
 #### Docker 版本
 
-- https://storage.googleapis.com/eos-kylin-backup
+- 
 
 #### 非 docker 版本
 
-- https://s3-ap-northeast-1.amazonaws.com/cryptokylin-eosstore/index.html
-
+- 
 ### 如何使用备份
 #### docker版本
-- 首先通过网址获取到最新的备份数据，例如：
-```
-   wget https://storage.googleapis.com/eos-kylin-backup/kylin-20181114060001.zip
-```
-- 在本地把数据解压到自己的配置文件中的路径下，并且修改自己配置文件中写的文件夹的名称，例如：
-```
-   tar -zxvf kylin-20181114060001.zip -C /
-   cd /data/eos/nodeos-data-volume/
-   mv nodeos-data-eospace-kylinbackup2 nodeos-data-kylin
-```
-- 启动docker 
-```
-   docker-compose -f docker-compose-kylin.yaml up -d
-```
-
-#### 非docker版本
-- 首先访问网址，获取到最新的备份数据  
-- 把数据解压到自己的配置文件中的指定路径下
-- 启动nodeos程序
-- 详细操作：https://github.com/zsq978663747/eos-doc/blob/master/eos_block_backup_cn.md
-
+- 
 
 
 
