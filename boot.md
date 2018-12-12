@@ -1,21 +1,21 @@
 
-##step 1: prepare config.ini and genesis.json by start a node with eosio
-##step 2: run nodeos
+## step 1: prepare config.ini and genesis.json by start a node with eosio
+## step 2: run nodeos
 ```
 nodeos --config-dir /data/eos-config -d /data/eos-data --genesis-json /data/eos-config/genesis.json
 ```
 
-##step 3: prepare wallet，准备钱包
+## step 3: prepare wallet，准备钱包
 ```
 cleos wallet create 
 cleos wallet import --private-key <private-key>
 ```
-##step 4: set contract eosio.bios
+## step 4: set contract eosio.bios
 ```
 CONTRACTS_FOLDER='/opt/EOS-Mainnet/eos/build/contracts' 
 cleos set contract eosio ${CONTRACTS_FOLDER}/eosio.bios -p eosio
 ```
-##step 5: create system accounts
+## step 5: create system accounts
 ```
 for account in eosio.bpay eosio.msig eosio.names eosio.ram eosio.ramfee eosio.saving eosio.stake eosio.token eosio.vpay eosio.wrap bos.dev bos.gov
 do 
@@ -44,32 +44,32 @@ done
 ```
 
 
-##step 6: set token and msig contract
+## step 6: set token and msig contract
 ```
 cleos set contract eosio.token ${CONTRACTS_FOLDER}/eosio.token -p eosio.token 
 cleos set contract eosio.msig ${CONTRACTS_FOLDER}/eosio.msig -p eosio.msig
 ```
 
-##step 7: create and issue token
+## step 7: create and issue token
 ```
 ./nb.py -t
 cless push action eosio.token create '["eosio", "10000000000.0000 BOS"]' -p eosio.token 
 cless push action eosio.token issue '["eosio", "1013000000.0000 BOS", "BOSCore"]' -p eosio
 ```
 
-##setp 8: setting privileged account for eosio.msig
+## setp 8: setting privileged account for eosio.msig
 ```
 cless push action eosio setpriv '{"account": "eosio.msig", "is_priv": 1}' -p eosio
 ```
-##step 9: set contract eosio.system
+## step 9: set contract eosio.system
 ```
 cleos set contract eosio ${CONTRACTS_FOLDER}/eosio.system -x 1000 -p eosio
 ```
-##step 10: set contract eosio.wrap
+## step 10: set contract eosio.wrap
 ```
 cleos set contract eosio.wrap ${CONTRACTS_FOLDER}/eosio.wrap -x 1000 -p eosio
 ```
-##step 11: create some account
+## step 11: create some account
 ```
 cless transfer eosio bos        "100000000 BOS"
 cless transfer eosio bos.stake1 "300000000 BOS"
@@ -82,7 +82,7 @@ cless transfer eosio bos.airdrop "10000000 BOS"
 ```
 
 
-#TokenPeg bos.pegtoken合约会部署在下面三个系统账户中
+# TokenPeg bos.pegtoken合约会部署在下面三个系统账户中
 bos.btc
 bos.eth
 bos.eos
@@ -95,7 +95,7 @@ csc bos.eos bos.pegtoken
 ```
 cless system newaccount --stake-net "10.0000 BOS" --stake-cpu "10.0000 BOS" --buy-ram "10.0000 BOS" eosio bosissuances EOS7fEuHBCPSYBNC9GorAbbyuswNXQfDwmun5pr6dLLCXog83NJu6 EOS7fEuHBCPSYBNC9GorAbbyuswNXQfDwmun5pr6dLLCXog83NJu6
 ```
-##step 12: transfer token
+## step 12: transfer token
 bos: 100M BOS belongs to BOSCore
 bosbkstake01: 300M BOS for BOS.BANK
 bosbkstake02: 300M BOS for BOS.BANK
@@ -153,7 +153,7 @@ cleos transfer eosio eosfaucet111 "100000000.0000 BOS"
 
 ```
 
-#step last: resign all system account
+## step last: resign all system account
 ```
 for account in eosio.bpay eosio.msig eosio.names eosio.ram eosio.ramfee eosio.saving eosio.stake eosio.token eosio.vpay eosio.wrap bos.dev bos.gov
 do
