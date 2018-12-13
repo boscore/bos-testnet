@@ -1,10 +1,8 @@
 
 [点击查看中文](README_CN.md)
 
-## Dependencies
-
-- [Docker](https://docs.docker.com) Docker 17.05 or higher is required
-- [docker-compose](https://docs.docker.com/compose/) version >= 1.10.0
+## docker images 
+You should update the last version from https://hub.docker.com/r/boscore/bos/tags/
 
 ## Clone project
 
@@ -53,11 +51,12 @@ To restart:
 docker-compose -f docker-compose-bostest.yaml down
 docker-compose -f docker-compose-bostest.yaml up -d
 ```
+
 ## Chain info
 
 ```
 
-"chain_id": ""
+"chain_id": "795eca928742876c50687e7954e60f63c9e34bcc547cd1ab4a831e9f8c058c7f"
 
 ```
 
@@ -96,37 +95,15 @@ API nodes support get actions ( filter-on=* ):
 Creating accounts on bostest is pretty simple:
 
 #### Free Account
-Create account using: http://faucet.  /create_account?new_account_name
+Create account using: http://13.230.195.142/create_account?new_account_name
 
 Example:
 ```
-curl http://faucet.   /create_account\?111111111ooo
+curl http://13.230.195.142/create_account\?111111111ooo
 ```
 
 
 #### Get Free tokens
-Get free token with: http://faucet.   /get_token?your_account_name.   
+Get free token with: http://13.230.195.142/get_token?your_account_name.   
 
 
-
-
-## Backup files
-
-For those of you who want to sync fast to the latest block, you can use these backup files here:
-
-#### Docker version
-
-- 
-
-#### Non docker version
-
-- 
-
-### How to use backup
-#### docker version
-- 
-- 
-- 
-
-#### Non docker version
-- 

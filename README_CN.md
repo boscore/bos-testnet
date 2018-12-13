@@ -3,10 +3,8 @@
 
 [View in English](README.md)
 
-## 依赖
-
-- [Docker](https://docs.docker.com) Docker版本 >= 17.05
-- [docker-compose](https://docs.docker.com/compose/) 版本 >= 1.10.0
+## docker images 
+You should update the last version from https://hub.docker.com/r/boscore/bos/tags/
 
 ## 克隆项目
 
@@ -58,7 +56,7 @@ docker-compose -f docker-compose-bostest.yaml up -d
 ## 链信息
 
 ```
-"chain_id": " "
+"chain_id": "795eca928742876c50687e7954e60f63c9e34bcc547cd1ab4a831e9f8c058c7f"
 
 ```
 
@@ -97,37 +95,22 @@ API nodes:
 在 `bos` 上创建账号非常简单:
 
 #### 免费账号
-创建免费账号: http://faucet.   /create_account?new_account_name
+创建免费账号: http://13.230.195.142/create_account?new_account_name
 
 例子:
 ```
-curl http://faucet.   /create_account\?111111111ooo
+curl http://13.230.195.142/create_account\?111111111ooo
 ```
 
 #### 获得免费Token
-获得免费Token: http://faucet.   /get_token?your_account_name. 
+获得免费Token: http://13.230.195.142/get_token?your_account_name. 
 每一次调用能获得100EOS, 每天最多获得1000个EOS.
 
 例子:
 ``` 
-curl http://faucet.  /get_token?111111111ooo
+curl http://13.230.195.142/get_token?111111111ooo
 ```
 
-
-## 备份文件
-
-可以通过下列备份文件快速同步测试网节点:
-
-#### Docker 版本
-
-- 
-
-#### 非 docker 版本
-
-- 
-### 如何使用备份
-#### docker版本
-- 
 
 
 

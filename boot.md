@@ -42,7 +42,6 @@ do
 done
 
 
-
 # step 6: set token and msig contract
 cleos set contract eosio.token ${CONTRACTS_FOLDER}/eosio.token -p eosio.token 
 cleos set contract eosio.msig ${CONTRACTS_FOLDER}/eosio.msig -p eosio.msig
@@ -97,77 +96,53 @@ cleos push action eosio updateauth '{"account": "eosio", "permission": "owner", 
 
 #check eosio
 cleos get account eosio
+
+# step 13  aridrop EOS Mainne 
+
 ```
 
 
-## bosfaucet111
+## boot test net 
+The following content is only for the BOS Testnet.
+### bosfaucet111
 ```
 cleos system newaccount --transfer --stake-net "10.0000 BOS" --stake-cpu "10.0000 BOS" --buy-ram "10.0000 BOS" eosio bosfaucet111 EOS77JF1pyiVsKBxonqP65MBo3RpH1beBwzrFBDHeqEwp2zTxqkDS    EOS5q9rNusgMU4qWRfbFhgsd7hwihkBrkAEPFrSS5zpdHTEBUa85C 
 
 cleos transfer eosio bosfaucet111 "100000000.0000 BOS" 
-#cleos transfer eosio bosio.faucet "199999730.0000 BOS"
 
 ```
 
-## TokenPeg bos.pegtoken合约会部署在下面三个系统账户中
-bos.btc
-bos.eth
-bos.eos
-注意：bos.btc 可以指定某一个账户具有某一个锚定币的发行权限，比如 huobipeg0001 可以发行 BTCHB 币种
-
-csc bos.btc bos.pegtoken
-csc bos.eth bos.pegtoken
-csc bos.eos bos.pegtoken
-增加bosissuances账户
-```
-cless system newaccount --stake-net "10.0000 BOS" --stake-cpu "10.0000 BOS" --buy-ram "10.0000 BOS" eosio bosissuances EOS7fEuHBCPSYBNC9GorAbbyuswNXQfDwmun5pr6dLLCXog83NJu6 EOS7fEuHBCPSYBNC9GorAbbyuswNXQfDwmun5pr6dLLCXog83NJu6
-```
-##  transfer token
-bos: 100M BOS belongs to BOSCore
-bosbkstake01: 300M BOS for BOS.BANK
-bosbkstake02: 300M BOS for BOS.BANK
-bosbkstake03: 300M BOS for BOS.BANK
-check eosio balance
-cleos get currency balance eosio.token eosio
-创建BP账户
+###创建BP账户
 
 ```
-cleos system newaccount --transfer eosio winlinwinlin EOS7qX9gEBuEDmEgW2WaUdgmGWJB3swojXA5tCUgcfwQw9ZczYCUj  EOS5F1H46ojiKcUhRvzh9d91r7rtgNBZ14zosHUqf7J7ekNAzCba7 --stake-net "10.0000 BOS" --stake-cpu "10.0000 BOS" --buy-ram "10.0000 BOS"
+cleos  system newaccount --stake-net "10.0000 BOS" --stake-cpu "10.0000 BOS" --buy-ram "10.0000 BOS"  eosio boscorebos11 EOS5zhvmicLyPRvvY1a5TbYj1aNfqbMmd1ezgknWLrbR87fMnpnwo 
+cleos  system newaccount --stake-net "10.0000 BOS" --stake-cpu "10.0000 BOS" --buy-ram "10.0000 BOS"  eosio boscorebos12 EOS6oAKmx9cMhvfdZ4pacWhvPuFjd6n6JgF886xmKFY85Gdkw2rik 
+cleos  system newaccount --stake-net "10.0000 BOS" --stake-cpu "10.0000 BOS" --buy-ram "10.0000 BOS"  eosio boscorebos13 EOS4wc7dsUsWS4L4QDMpJBhUqaqx6f4ZU7tSrGunGWYUAiSWygjtr 
 
-cleos transfer bosbkstake1 winlinwinlin "3000000 BOS"
+for account in youbeforeme1 youbeforeme2 youbeforeme3 bosmiaomiao1 bosmiaomiao2 bosmiaomiao3 bosmiaomiao4 bosmiaomiao5 pinganbaobao pinganbaobei
+do
+    cleos  system newaccount --stake-net "10.0000 BOS" --stake-cpu "10.0000 BOS" --buy-ram "10.0000 BOS"  eosio ${account}  EOS5v5oqe1LtNVheTAZGcWkTbrZ8UJ7TFZg2LNsj3q6iwdBZP9au3;
+    sleep 1;
+done
 
-# ? 
-cleos system newaccount --transfer eosio zeromindzero EOS7XCmjTfthmLnKQmLM8EEke97PFsuxQwZsbP4HsudwEJahkryeG EOS5gLn1NVinyJPvn2U4ow45GdBaoVdcz7zVDwfsTCLzft63KMC36 --stake-net "10.0000 BOS" --stake-cpu "10.0000 BOS" --buy-ram "10.0000 BOS" 
+for account in london111111 franklin1111 dubai1111111 bombay111111 hongkong1111
+do
+    cleos  system newaccount --stake-net "10.0000 BOS" --stake-cpu "10.0000 BOS" --buy-ram "10.0000 BOS"  eosio ${account} EOS4wVs4b9gUnQURXdDsLmnJEXMpqE1ir28L48gCEpMyutnd6Gxrj;
+    sleep 1;
+done
 
-cleos transfer bosbkstake1 zeromindzero "3000000 BOS"
+cleos  system newaccount --stake-net "10.0000 BOS" --stake-cpu "10.0000 BOS" --buy-ram "10.0000 BOS"  eosio zeromindzero  EOS5gLn1NVinyJPvn2U4ow45GdBaoVdcz7zVDwfsTCLzft63KMC36
+cleos  system newaccount --stake-net "10.0000 BOS" --stake-cpu "10.0000 BOS" --buy-ram "10.0000 BOS"  eosio montecarloio  EOS6NYP8EujJURbArAHUMYCSjJAH7Vwa5Sxx7aLUiXiEwWN8XsYJw
+cleos  system newaccount --stake-net "10.0000 BOS" --stake-cpu "10.0000 BOS" --buy-ram "10.0000 BOS"  eosio alphalimited  EOS7RcQx7g7tJGf3DSYSUgF2FWuNh1TTMAPuo7c82WCnWG6V4F4fR
+cleos  system newaccount --stake-net "10.0000 BOS" --stake-cpu "10.0000 BOS" --buy-ram "10.0000 BOS"  eosio alphaxsydney  EOS7Vgx98hC4eisQVubCNvBGGN8gM7BKucZ5mJzgVUXpJMLF65okg
+cleos  system newaccount --stake-net "10.0000 BOS" --stake-cpu "10.0000 BOS" --buy-ram "10.0000 BOS"  eosio mindtosydney  EOS8BeTKczXv6uEKksV8fF74R1fiARTVWJ7Qwtn8mRmM17aYqkSjb
+cleos  system newaccount --stake-net "10.0000 BOS" --stake-cpu "10.0000 BOS" --buy-ram "10.0000 BOS"  eosio montexsydney  EOS8R9yKbEJ5mbU7hG5dV8pbhmaYMYpXxhCwpKwQ5j28QEikaKxUK
 
-# ?
-cleos system newaccount --transfer eosio boscorebos11    EOS7hjYGvhRF99czdXE5acUPjnWoKebpxebgRZqXxPUSxmT1K9q97    EOS5zhvmicLyPRvvY1a5TbYj1aNfqbMmd1ezgknWLrbR87fMnpnwo  --stake-net "10.0000 BOS" --stake-cpu "10.0000 BOS" --buy-ram "10.0000 BOS" 
-cleos transfer bosbkstake1 boscorebos11 "3000000 BOS"
+cleos  transfer  eosio  zeromindzero "100000000.0000 BOS"
+cleos  transfer  eosio  youbeforeme1 "100000000.0000 BOS"
+cleos  transfer  eosio  london111111 "100000000.0000 BOS"
+cleos  transfer  eosio  boscorebos11 "100000000.0000 BOS"
 
-# ?
-cleos system newaccount --transfer eosio boscorebos12    EOS84H324q8mu2oS1BwDcWXKJDpNgCiDauYgcVpRcYEzXxvfNvifa     EOS6oAKmx9cMhvfdZ4pacWhvPuFjd6n6JgF886xmKFY85Gdkw2rik  --stake-net "10.0000 BOS" --stake-cpu "10.0000 BOS" --buy-ram "10.0000 BOS" 
-# ?
-cleos system newaccount --transfer eosio boscorebos13  EOS7enNAQLxT8biyNM39nApGYJrcS59TQY9dPBBeyZn1A4Ai9ouCk  EOS4wc7dsUsWS4L4QDMpJBhUqaqx6f4ZU7tSrGunGWYUAiSWygjtr --stake-net "10.0000 BOS" --stake-cpu "10.0000 BOS" --buy-ram "10.0000 BOS"
-
-
-# ?
-cleos system newaccount --transfer eosio youbeforeme1 EOS8arxL9mNRfdVN43j2yTjqr8BuPM3rz3iBZi18JZ5zngQFX16ZA EOS5v5oqe1LtNVheTAZGcWkTbrZ8UJ7TFZg2LNsj3q6iwdBZP9au3 --stake-net "10.0000 BOS" --stake-cpu "10.0000 BOS" --buy-ram "10.0000 BOS" 
-cleos transfer bosbkstake1 youbeforeme1 "3000000 BOS"
-
-cleos system newaccount --transfer youbeforeme1 youbeforeme2 EOS8arxL9mNRfdVN43j2yTjqr8BuPM3rz3iBZi18JZ5zngQFX16ZA EOS5v5oqe1LtNVheTAZGcWkTbrZ8UJ7TFZg2LNsj3q6iwdBZP9au3 --stake-net "10.0000 BOS" --stake-cpu "10.0000 BOS" --buy-ram "10.0000 BOS"
-
-cleos transfer youbeforeme1 youbeforeme2 "20 BOS"
-
-cleos system newaccount --transfer youbeforeme2 youbeforeme3 EOS8arxL9mNRfdVN43j2yTjqr8BuPM3rz3iBZi18JZ5zngQFX16ZA EOS5v5oqe1LtNVheTAZGcWkTbrZ8UJ7TFZg2LNsj3q6iwdBZP9au3 --stake-net "10.0000 BOS" --stake-cpu "10.0000 BOS" --buy-ram "10.0000 BOS"
-
-cleos system newaccount --transfer youbeforeme1 pearlrivers1 EOS8arxL9mNRfdVN43j2yTjqr8BuPM3rz3iBZi18JZ5zngQFX16ZA EOS5v5oqe1LtNVheTAZGcWkTbrZ8UJ7TFZg2LNsj3q6iwdBZP9au3 --stake-net "10.0000 BOS" --stake-cpu "10.0000 BOS" --buy-ram "10.0000 BOS"
-
-cleos system newaccount --transfer youbeforeme1 pearlrivers2 EOS8arxL9mNRfdVN43j2yTjqr8BuPM3rz3iBZi18JZ5zngQFX16ZA EOS5v5oqe1LtNVheTAZGcWkTbrZ8UJ7TFZg2LNsj3q6iwdBZP9au3 --stake-net "10.0000 BOS" --stake-cpu "10.0000 BOS" --buy-ram "10.0000 BOS"
-
-cleos system newaccount --transfer youbeforeme1 pearlrivers3 EOS8arxL9mNRfdVN43j2yTjqr8BuPM3rz3iBZi18JZ5zngQFX16ZA EOS5v5oqe1LtNVheTAZGcWkTbrZ8UJ7TFZg2LNsj3q6iwdBZP9au3 --stake-net "10.0000 BOS" --stake-cpu "10.0000 BOS" --buy-ram "10.0000 BOS"
-
-cleos system newaccount --transfer youbeforeme1 newjerseyusa EOS8arxL9mNRfdVN43j2yTjqr8BuPM3rz3iBZi18JZ5zngQFX16ZA EOS5v5oqe1LtNVheTAZGcWkTbrZ8UJ7TFZg2LNsj3q6iwdBZP9au3 --stake-net "10.0000 BOS" --stake-cpu "10.0000 BOS" --buy-ram "10.0000 BOS"
 ```
 
 
