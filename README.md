@@ -98,7 +98,7 @@ http://120.197.130.117:8020/v1/chain/get_info
 
 API nodes support get actions ( filter-on=* ):
 ```
-
+ http://ap.testnet.bos.blockgo.pro
 ```
 
 ## Faucet
