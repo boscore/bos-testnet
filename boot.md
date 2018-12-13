@@ -112,7 +112,7 @@ cleos transfer eosio bosfaucet111 "100000000.0000 BOS"
 
 ```
 
-###创建BP账户
+### 创建BP账户
 
 ```
 cleos  system newaccount --stake-net "10.0000 BOS" --stake-cpu "10.0000 BOS" --buy-ram "10.0000 BOS"  eosio boscorebos11 EOS5zhvmicLyPRvvY1a5TbYj1aNfqbMmd1ezgknWLrbR87fMnpnwo 
