@@ -134,11 +134,11 @@ cless transfer youbeforeme1 youbeforeme2 "20 BOS"
 
 cless system newaccount --transfer youbeforeme2 youbeforeme3 EOS8arxL9mNRfdVN43j2yTjqr8BuPM3rz3iBZi18JZ5zngQFX16ZA EOS5v5oqe1LtNVheTAZGcWkTbrZ8UJ7TFZg2LNsj3q6iwdBZP9au3 --stake-net "10.0000 BOS" --stake-cpu "10.0000 BOS" --buy-ram "10.0000 BOS"
 
-cless system newaccount --transfer youbeforeme1 shenzhenode1 EOS8arxL9mNRfdVN43j2yTjqr8BuPM3rz3iBZi18JZ5zngQFX16ZA EOS5v5oqe1LtNVheTAZGcWkTbrZ8UJ7TFZg2LNsj3q6iwdBZP9au3 --stake-net "10.0000 BOS" --stake-cpu "10.0000 BOS" --buy-ram "10.0000 BOS"
+cless system newaccount --transfer youbeforeme1 pearlrivers1 EOS8arxL9mNRfdVN43j2yTjqr8BuPM3rz3iBZi18JZ5zngQFX16ZA EOS5v5oqe1LtNVheTAZGcWkTbrZ8UJ7TFZg2LNsj3q6iwdBZP9au3 --stake-net "10.0000 BOS" --stake-cpu "10.0000 BOS" --buy-ram "10.0000 BOS"
 
-cless system newaccount --transfer youbeforeme1 shenzhenode2 EOS8arxL9mNRfdVN43j2yTjqr8BuPM3rz3iBZi18JZ5zngQFX16ZA EOS5v5oqe1LtNVheTAZGcWkTbrZ8UJ7TFZg2LNsj3q6iwdBZP9au3 --stake-net "10.0000 BOS" --stake-cpu "10.0000 BOS" --buy-ram "10.0000 BOS"
+cless system newaccount --transfer youbeforeme1 pearlrivers2 EOS8arxL9mNRfdVN43j2yTjqr8BuPM3rz3iBZi18JZ5zngQFX16ZA EOS5v5oqe1LtNVheTAZGcWkTbrZ8UJ7TFZg2LNsj3q6iwdBZP9au3 --stake-net "10.0000 BOS" --stake-cpu "10.0000 BOS" --buy-ram "10.0000 BOS"
 
-cless system newaccount --transfer youbeforeme1 shenzhenode3 EOS8arxL9mNRfdVN43j2yTjqr8BuPM3rz3iBZi18JZ5zngQFX16ZA EOS5v5oqe1LtNVheTAZGcWkTbrZ8UJ7TFZg2LNsj3q6iwdBZP9au3 --stake-net "10.0000 BOS" --stake-cpu "10.0000 BOS" --buy-ram "10.0000 BOS"
+cless system newaccount --transfer youbeforeme1 pearlrivers3 EOS8arxL9mNRfdVN43j2yTjqr8BuPM3rz3iBZi18JZ5zngQFX16ZA EOS5v5oqe1LtNVheTAZGcWkTbrZ8UJ7TFZg2LNsj3q6iwdBZP9au3 --stake-net "10.0000 BOS" --stake-cpu "10.0000 BOS" --buy-ram "10.0000 BOS"
 
 cless system newaccount --transfer youbeforeme1 newjerseyusa EOS8arxL9mNRfdVN43j2yTjqr8BuPM3rz3iBZi18JZ5zngQFX16ZA EOS5v5oqe1LtNVheTAZGcWkTbrZ8UJ7TFZg2LNsj3q6iwdBZP9au3 --stake-net "10.0000 BOS" --stake-cpu "10.0000 BOS" --buy-ram "10.0000 BOS"
 ```
