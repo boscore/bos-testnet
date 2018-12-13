@@ -63,13 +63,12 @@ docker-compose -f docker-compose-bostest.yaml up -d
 ## P2P LIST
 
 ```
-p2p-peer-address = 120.197.130.116:9000
 p2p-peer-address = 13.230.195.142:9866
-p2p-peer-address = 120.197.130.117:9000
-p2p-peer-address = 120.197.130.117:9001
-p2p-peer-address = 120.197.130.117:9002
-p2p-peer-address = 120.197.130.117:9003
-p2p-peer-address = 45.79.145.205:9000
+p2p-peer-address = 120.197.130.117:9020
+p2p-peer-address = 120.197.130.117:9021
+p2p-peer-address = 120.197.130.117:9022
+p2p-peer-address = 120.197.130.117:9023
+p2p-peer-address = 120.197.130.117:9024
 p2p-peer-address = 47.91.244.124:443
 p2p-peer-address = 8.208.9.182:443
 p2p-peer-address = 47.254.82.241:443
@@ -81,6 +80,7 @@ p2p-peer-address = 35.221.141.101:9900
 p2p-peer-address = 35.236.174.234:9902
 p2p-peer-address = 35.236.174.234:9903
 p2p-peer-address = 35.236.174.234:9904
+
 ```
 
 
@@ -88,6 +88,11 @@ p2p-peer-address = 35.236.174.234:9904
 
 API nodes:
 ```
+http://47.254.82.241:80/v1/chain/get_info 
+http://47.254.134.167:80/v1/chain/get_info 
+http://49.129.133.66:80/v1/chain/get_info 
+http://8.208.9.182:80/v1/chain/get_info 
+http://47.91.244.124:80/v1/chain/get_info 
 
 ```
 
