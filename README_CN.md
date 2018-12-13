@@ -1,6 +1,5 @@
-# CryptoKylin-Testnet
 
-欢迎来到 CryptoKylin-Testnet
+欢迎来到 bos-testnet
 
 [View in English](README.md)
 
@@ -12,7 +11,7 @@
 ## 克隆项目
 
 ```
-git clone git@github.com:cryptokylin/CryptoKylin-Testnet.git
+git clone clone https://github.com/boscore/bos-testnet.git
 cd fullnode
 ```
 
@@ -59,9 +58,8 @@ docker-compose -f docker-compose-kylin.yaml up -d
 ## 链信息
 
 ```
-{
-  "chain_id": "5fff1dae8dc8e2fc4d5b23b2c7665c97f9e9d8edf2b6485a86ba311c25639191"
-}
+"chain_id": " "
+
 ```
 
 ## P2P 节点列表
