@@ -64,7 +64,7 @@ docker-compose -f docker-compose-bostest.yaml up -d
 
 ```
 p2p-peer-address = 120.197.130.116:9000
-p2p-peer-address = 13.230.87.138:9866
+p2p-peer-address = 13.230.195.142:9866
 p2p-peer-address = 120.197.130.117:9000
 p2p-peer-address = 120.197.130.117:9001
 p2p-peer-address = 120.197.130.117:9002
