@@ -1,23 +1,23 @@
 
 [点击查看中文](README_CN.md)
 
-## docker images 
+### docker images 
 You should update the last version from https://hub.docker.com/r/boscore/bos/tags/
 
-## Clone project
+### Clone project
 
 ```
 git clone https://github.com/boscore/bos-testnet.git
 cd fullnode
 ```
 
-## Setup a fullnode in 5 seconds using the shell
+### Setup a fullnode in 5 seconds using the shell
 
 ```
 ./run.sh
 ```
 
-## Setup a fullnode manually in 1 minute
+### Setup a fullnode manually in 1 minute
 
 The first step, create the desired directory:
 
@@ -37,7 +37,7 @@ The third step, join the network:
 docker-compose -f docker-compose-bostest-init.yaml up -d
 ```
 
-## Stop/Restart syncing
+### Stop/Restart syncing
 
 To stop:
 
