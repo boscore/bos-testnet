@@ -2,7 +2,7 @@ version: "3"
 
 services:
   nodeosd:
-    image: cryptokylin/eos:v1.4.4
+    image: boscore/bos:latest
     command: /opt/eosio/bin/nodeos --data-dir=/data --config-dir=/etc/nodeos
     hostname: nodeosd
     ports:
@@ -11,5 +11,5 @@ services:
     expose:
       - "8888"
     volumes:
-      - /data/eos/nodeos-data-volume/nodeos-data-kylin/config:/etc/nodeos
-      - /data/eos/nodeos-data-volume/nodeos-data-kylin/data:/data
+      - /data/eos/nodeos-data-volume/nodeos-data-bostest/config:/etc/nodeos
+      - /data/eos/nodeos-data-volume/nodeos-data-bostest/data:/data

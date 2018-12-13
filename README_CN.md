@@ -26,19 +26,19 @@ cd fullnode
 第一步，创建所需要的目录:
 
 ```
-mkdir -p /data/eos/nodeos-data-volume/nodeos-data-kylin/data
+mkdir -p /data/eos/nodeos-data-volume/nodeos-data-bostest/data
 ```
 
 第二步，准备配置文件:
 
 ```
-cp -r config /data/eos/nodeos-data-volume/nodeos-data-kylin
+cp -r config /data/eos/nodeos-data-volume/nodeos-data-bostest
 ```
 
 第三步，启动全节点
 
 ```
-docker-compose -f docker-compose-kylin-init.yaml up -d
+docker-compose -f docker-compose-bostest-init.yaml up -d
 ```
 
 ## 暂停/重启 同步
@@ -46,14 +46,14 @@ docker-compose -f docker-compose-kylin-init.yaml up -d
 暂停:
 
 ```
-docker-compose -f docker-compose-kylin.yaml down
+docker-compose -f docker-compose-bostest.yaml down
 ```
 
 重启:
 
 ```
-docker-compose -f docker-compose-kylin.yaml down
-docker-compose -f docker-compose-kylin.yaml up -d
+docker-compose -f docker-compose-bostest.yaml down
+docker-compose -f docker-compose-bostest.yaml up -d
 ```
 ## 链信息
 

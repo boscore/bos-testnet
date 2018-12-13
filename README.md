@@ -24,19 +24,19 @@ cd fullnode
 The first step, create the desired directory:
 
 ```
-mkdir -p /data/eos/nodeos-data-volume/nodeos-data-kylin/data
+mkdir -p /data/eos/nodeos-data-volume/nodeos-data-bostest/data
 ```
 
 The second step is to prepare the configuration file:
 
 ```
-cp -r config /data/eos/nodeos-data-volume/nodeos-data-kylin
+cp -r config /data/eos/nodeos-data-volume/nodeos-data-bostest
 ```
 
 The third step, join the network:
 
 ```
-docker-compose -f docker-compose-kylin-init.yaml up -d
+docker-compose -f docker-compose-bostest-init.yaml up -d
 ```
 
 ## Stop/Restart syncing
@@ -44,14 +44,14 @@ docker-compose -f docker-compose-kylin-init.yaml up -d
 To stop:
 
 ```
-docker-compose -f docker-compose-kylin.yaml down
+docker-compose -f docker-compose-bostest.yaml down
 ```
 
 To restart:
 
 ```
-docker-compose -f docker-compose-kylin.yaml down
-docker-compose -f docker-compose-kylin.yaml up -d
+docker-compose -f docker-compose-bostest.yaml down
+docker-compose -f docker-compose-bostest.yaml up -d
 ```
 ## Chain info
 
@@ -93,7 +93,7 @@ API nodes support get actions ( filter-on=* ):
 
 ## Faucet
 
-Creating accounts on cryptokylin is pretty simple:
+Creating accounts on bostest is pretty simple:
 
 #### Free Account
 Create account using: http://faucet.  /create_account?new_account_name
