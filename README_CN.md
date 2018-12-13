@@ -93,6 +93,7 @@ http://47.254.134.167:80/v1/chain/get_info
 http://49.129.133.66:80/v1/chain/get_info 
 http://8.208.9.182:80/v1/chain/get_info 
 http://47.91.244.124:80/v1/chain/get_info
+http://120.197.130.117:8020/v1/chain/get_info
 ```
 
 支持 `get actions` ( filter-on=* ) 的API:
