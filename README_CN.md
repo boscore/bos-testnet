@@ -88,7 +88,11 @@ p2p-peer-address = 35.236.174.234:9904
 
 API nodes:
 ```
-
+http://47.254.82.241:80/v1/chain/get_info 
+http://47.254.134.167:80/v1/chain/get_info 
+http://49.129.133.66:80/v1/chain/get_info 
+http://8.208.9.182:80/v1/chain/get_info 
+http://47.91.244.124:80/v1/chain/get_info
 ```
 
 支持 `get actions` ( filter-on=* ) 的API:
