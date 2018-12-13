@@ -41,6 +41,9 @@ do
     sleep 1; 
 done
 
+# set an abp 
+cleos  create account eosio boscoretokyo EOS7B2h89KDYXzVNj6G8MLkFgQExfns1ssTH19MkDTPcFBTfssJb4
+cleos push action eosio setprods '{"schedule":[{"producer_name":"boscoretokyo","block_signing_key":"EOS7B2h89KDYXzVNj6G8MLkFgQExfns1ssTH19MkDTPcFBTfssJb4"}]}' -p eosio
 
 # step 6: set token and msig contract
 cleos set contract eosio.token ${CONTRACTS_FOLDER}/eosio.token -p eosio.token 
