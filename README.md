@@ -56,7 +56,7 @@ docker-compose -f docker-compose-bostest.yaml up -d
 
 ```
 
-"chain_id": "795eca928742876c50687e7954e60f63c9e34bcc547cd1ab4a831e9f8c058c7f"
+"chain_id": "33cc2426f1b258ef8c798c34c0360b31732ea27a2d7e35a65797850a86d1ba85"
 
 ```
 
@@ -106,4 +106,6 @@ curl http://13.230.195.142/create_account\?111111111ooo
 #### Get Free tokens
 Get free token with: http://13.230.195.142/get_token?your_account_name.   
 
+## telegram monitor 
+https://t.me/bosteststatus 
 
