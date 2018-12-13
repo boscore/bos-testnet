@@ -6,20 +6,20 @@
 ## docker images 
 You should update the last version from https://hub.docker.com/r/boscore/bos/tags/
 
-## 克隆项目
+### 克隆项目
 
 ```
 git clone clone https://github.com/boscore/bos-testnet.git
 cd fullnode
 ```
 
-## 5秒之内搭建一个全节点
+### 5秒之内搭建一个全节点
 
 ```
 ./run.sh
 ```
 
-## 1分钟内手动搭建全节点
+### 1分钟内手动搭建全节点
 
 第一步，创建所需要的目录:
 
@@ -39,7 +39,7 @@ cp -r config /data/eos/nodeos-data-volume/nodeos-data-bostest
 docker-compose -f docker-compose-bostest-init.yaml up -d
 ```
 
-## 暂停/重启 同步
+### 暂停/重启 同步
 
 暂停:
 
@@ -98,7 +98,7 @@ http://120.197.130.117:8020/v1/chain/get_info
 
 支持 `get actions` ( filter-on=* ) 的API:
 ```
-
+http://ap.testnet.bos.blockgo.pro
 ```
 
 ## 水龙头
