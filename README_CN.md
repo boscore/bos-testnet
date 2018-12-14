@@ -9,7 +9,7 @@ You should update the last version from https://hub.docker.com/r/boscore/bos/tag
 ### 克隆项目
 
 ```
-git clone clone https://github.com/boscore/bos-testnet.git
+git clone https://github.com/boscore/bos-testnet.git
 cd fullnode
 ```
 
