@@ -25,6 +25,13 @@ do
     sleep 1; 
 done
 
+for account in  tklimit.sets uid
+do 
+    echo -e "\n creating $account \n"; 
+    cleos create account eosio ${account} EOS7hHHDtnPRbhMmfHJHUEKQyiutKrt9wZPdy1JbaATVLyxpCkrop; 
+    sleep 1; 
+done
+
 cleos create account eosio bos EOS5oWpvWPYE7GzzJGfqLe9yDHzqrTT1gMiW9cBNftbaze3ZsfCXW
 
 for account in  bos.stake1 bos.stake2  bos.stake3
