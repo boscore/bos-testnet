@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  nodeosd:
+    image: boscore/bos:latest
+    command: /opt/eosio/bin/nodeos --data-dir=/data --config-dir=/etc/nodeos
+    hostname: nodeosd
+    ports:
+      - 8890:8888
+      - 9878:9876
+    expose:
+      - "8888"
+    volumes:
+      - /data/eos/nodeos-data-volume/nodeos-data-bostest/config:/etc/nodeos
+      - /data/eos/nodeos-data-volume/nodeos-data-bostest/data:/data
