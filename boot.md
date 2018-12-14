@@ -18,14 +18,7 @@ cleos set contract eosio ${CONTRACTS_FOLDER}/eosio.bios -p eosio
 
 # step 5: create system accounts
 
-for account in eosio.bpay eosio.msig eosio.names eosio.ram eosio.ramfee eosio.saving eosio.stake eosio.token eosio.vpay eosio.wrap bos.dev bos.gov
-do 
-    echo -e "\n creating $account \n"; 
-    cleos create account eosio ${account} EOS7hHHDtnPRbhMmfHJHUEKQyiutKrt9wZPdy1JbaATVLyxpCkrop; 
-    sleep 1; 
-done
-
-for account in  tklimit.sets uid
+for account in eosio.bpay eosio.msig eosio.names eosio.ram eosio.ramfee eosio.saving eosio.stake eosio.token eosio.vpay eosio.wrap bos.dev bos.gov tklimit.sets
 do 
     echo -e "\n creating $account \n"; 
     cleos create account eosio ${account} EOS7hHHDtnPRbhMmfHJHUEKQyiutKrt9wZPdy1JbaATVLyxpCkrop; 
@@ -34,7 +27,7 @@ done
 
 cleos create account eosio bos EOS5oWpvWPYE7GzzJGfqLe9yDHzqrTT1gMiW9cBNftbaze3ZsfCXW
 
-for account in  bos.stake1 bos.stake2  bos.stake3
+for account in   uid bos.stake1 bos.stake2  bos.stake3
 do 
     echo -e "\n creating $account \n"; 
     cleos create account eosio ${account} EOS6Vi3dHtsMrw6gjZvyDRqeDttMhCia4NzH2zQdYbKYErTp5eJud; 
@@ -88,7 +81,7 @@ cleos transfer eosio bos.airdrop "10000000 BOS"
 
 # step 12: resign all system account
 
-for account in eosio.bpay eosio.msig eosio.names eosio.ram eosio.ramfee eosio.saving eosio.stake eosio.token eosio.vpay eosio.wrap bos.dev bos.gov
+for account in eosio.bpay eosio.msig eosio.names eosio.ram eosio.ramfee eosio.saving eosio.stake eosio.token eosio.vpay eosio.wrap bos.dev bos.gov tklimit.sets
 do
     cleos  push action eosio updateauth '{"account": "'$account'", "permission": "active", "parent": "owner", "auth":{"threshold": 1, "keys": [], "waits": [], "accounts": [{"weight": 1, "permission": {"actor": "eosio", "permission": active}}]}}' -p ${account}@active
     cleos  push action eosio updateauth '{"account": "'$account'", "permission": "owner", "parent": "",       "auth":{"threshold": 1, "keys": [], "waits": [], "accounts": [{"weight": 1, "permission": {"actor": "eosio", "permission": active}}]}}' -p ${account}@owner
@@ -96,7 +89,7 @@ do
 done
 
 #check system accounts
-for account in eosio.bpay eosio.msig eosio.names eosio.ram eosio.ramfee eosio.saving eosio.stake eosio.token eosio.vpay  bos.dev bos.gov
+for account in eosio.bpay eosio.msig eosio.names eosio.ram eosio.ramfee eosio.saving eosio.stake eosio.token eosio.vpay  eosio.wrap bos.dev bos.gov tklimit.sets
 do 
     echo --- ${account} --- && cleos get account ${account} && sleep 1; 
 done
