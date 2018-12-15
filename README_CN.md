@@ -98,7 +98,7 @@ http://120.197.130.117:8020/v1/chain/get_info
 
 支持 `get actions` ( filter-on=* ) 的API:
 ```
-http://ap.testnet.bos.blockgo.pro
+https://bostest.api.blockgo.vip
 ```
 
 ## 水龙头
