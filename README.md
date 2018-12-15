@@ -101,7 +101,6 @@ http://bos-testnet.meet.one:8888/v1/chain/get_info
 API nodes support get actions ( filter-on=* ):
 ```
 https://bostest.api.blockgo.vip
-http://bos-testnet.meet.one:8888
 ```
 
 ## Faucet
