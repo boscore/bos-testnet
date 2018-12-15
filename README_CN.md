@@ -110,7 +110,7 @@ https://bostest.api.blockgo.vip
 
 例子:
 ```
-curl http://13.230.195.142/create_account\?111111111ooo
+curl http://faucet.bosmonitor.io/create_account\?111111111ooo
 ```
 
 #### 获得免费Token
@@ -119,7 +119,7 @@ curl http://13.230.195.142/create_account\?111111111ooo
 
 例子:
 ``` 
-curl http://13.230.195.142/get_token?111111111ooo
+curl http://faucet.bosmonitor.io/get_token?111111111ooo
 ```
 
 ## 电报监控地址：
