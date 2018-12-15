@@ -10,7 +10,7 @@ You should update the last version from https://hub.docker.com/r/boscore/bos/tag
 git clone https://github.com/boscore/bos-testnet.git
 cd fullnode
 ```
-
+The diffrence between fullnode and bpnode is the config.ini bpnode have producer_plugin.
 ### Setup a fullnode in 5 seconds using the shell
 
 ```
