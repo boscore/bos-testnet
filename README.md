@@ -106,11 +106,12 @@ API nodes support get actions ( filter-on=* ):
 Creating accounts on bostest is pretty simple:
 
 #### Free Account
-Create account using: http://13.230.195.142/create_account?new_account_name
+Create account using: http://faucet.bosmonitor.io/create_account?new_account_name
+# 13.230.195.142
 
 Example:
 ```
-curl http://13.230.195.142/create_account\?111111111ooo
+curl http://faucet.bosmonitor.io/create_account?111111111ooo
 ```
 
 
