@@ -12,7 +12,7 @@ You should update the last version from https://hub.docker.com/r/boscore/bos/tag
 git clone https://github.com/boscore/bos-testnet.git
 cd fullnode
 ```
-
+fullnode 和 bpnode的主要区别是bpnode 的config中增加了producer_plugin插件用来出块。
 ### 5秒之内搭建一个全节点
 
 ```
