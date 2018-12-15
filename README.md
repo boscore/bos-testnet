@@ -116,7 +116,7 @@ curl http://faucet.bosmonitor.io/create_account?111111111ooo
 
 
 #### Get Free tokens
-Get free token with: faucet.bosmonitor.io/get_token?your_account_name.   
+Get free token with: http://faucet.bosmonitor.io/get_token?your_account_name.   
 
 ## telegram monitor 
 https://t.me/bosteststatus 
