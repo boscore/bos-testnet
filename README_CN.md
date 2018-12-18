@@ -115,6 +115,7 @@ curl https://faucet-bos-testnet.keosd.io/create/111111111ooo
 
 #### 获得免费Token
 获得免费Token: https://faucet-bos-testnet.keosd.io/get_token/<your_account_name>. 
+
 每一次调用能获得100EOS, 每天最多获得1000个EOS.
 
 例子:
