@@ -106,20 +106,20 @@ https://bostest.api.blockgo.vip
 在 `bos` 上创建账号非常简单:
 
 #### 免费账号
-创建免费账号: http://faucet.bosmonitor.io/create_account?new_account_name
+创建免费账号: https://faucet-bos-testnet.keosd.io/create/<new_account>.
 
 例子:
 ```
-curl http://faucet.bosmonitor.io/create_account\?111111111ooo
+curl https://faucet-bos-testnet.keosd.io/create/111111111ooo
 ```
 
 #### 获得免费Token
-获得免费Token: http://faucet.bosmonitor.io/get_token?your_account_name. 
+获得免费Token: https://faucet-bos-testnet.keosd.io/get_token/<your_account_name>. 
 每一次调用能获得100EOS, 每天最多获得1000个EOS.
 
 例子:
 ``` 
-curl http://faucet.bosmonitor.io/get_token?111111111ooo
+curl https://faucet-bos-testnet.keosd.io/get_token/111111111ooo
 ```
 
 ## 电报监控地址：
