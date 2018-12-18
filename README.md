@@ -106,17 +106,22 @@ API nodes support get actions ( filter-on=* ):
 Creating accounts on bostest is pretty simple:
 
 #### Free Account
-Create account using: http://faucet.bosmonitor.io/create_account?new_account_name
-# 13.230.195.142
+Create account using: https://faucet-bos-testnet.keosd.io/create/<new_account>.
+
 
 Example:
 ```
-curl http://faucet.bosmonitor.io/create_account?111111111ooo
+curl https://faucet-bos-testnet.keosd.io/create/111111111ooo
 ```
 
 
 #### Get Free tokens
-Get free token with: http://faucet.bosmonitor.io/get_token?your_account_name.   
+Get free token with: https://faucet-bos-testnet.keosd.io/get_token/<your_account_name>.  
+Example
+```
+curl https://faucet-bos-testnet.keosd.io/get_token/111111111ooo
+```
+
 
 ## telegram monitor 
 https://t.me/bosteststatus 
