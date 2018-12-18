@@ -80,6 +80,7 @@ p2p-peer-address = 35.221.141.101:9900
 p2p-peer-address = 35.236.174.234:9902
 p2p-peer-address = 35.236.174.234:9903
 p2p-peer-address = 35.236.174.234:9904
+p2p-peer-address = bos-testnet.meet.one:9876
 p2p-peer-address = 47.75.252.36:9878
 ```
 
@@ -94,12 +95,13 @@ http://49.129.133.66:80/v1/chain/get_info
 http://8.208.9.182:80/v1/chain/get_info 
 http://47.91.244.124:80/v1/chain/get_info 
 http://120.197.130.117:8020/v1/chain/get_info
+http://bos-testnet.meet.one:8888/v1/chain/get_info
 http://bos-testnet.mytokenpocket.vip:8890/v1/chain/get_info
 ```
 
 API nodes support get actions ( filter-on=* ):
 ```
- https://bostest.api.blockgo.vip
+https://bostest.api.blockgo.vip
 ```
 
 ## Faucet
