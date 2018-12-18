@@ -81,6 +81,7 @@ p2p-peer-address = 35.221.141.101:9900
 p2p-peer-address = 35.236.174.234:9902
 p2p-peer-address = 35.236.174.234:9903
 p2p-peer-address = 35.236.174.234:9904
+p2p-peer-address = 47.75.252.36:9878
 ```
 
 
@@ -94,6 +95,7 @@ http://49.129.133.66:80/v1/chain/get_info
 http://8.208.9.182:80/v1/chain/get_info 
 http://47.91.244.124:80/v1/chain/get_info
 http://120.197.130.117:8020/v1/chain/get_info
+http://bos-testnet.mytokenpocket.vip:8890/v1/chain/get_info
 ```
 
 支持 `get actions` ( filter-on=* ) 的API:
@@ -106,20 +108,21 @@ https://bostest.api.blockgo.vip
 在 `bos` 上创建账号非常简单:
 
 #### 免费账号
-创建免费账号: http://13.230.195.142/create_account?new_account_name
+创建免费账号: https://faucet-bos-testnet.keosd.io/create/<new_account>.
 
 例子:
 ```
-curl http://13.230.195.142/create_account\?111111111ooo
+curl https://faucet-bos-testnet.keosd.io/create/111111111ooo
 ```
 
 #### 获得免费Token
-获得免费Token: http://13.230.195.142/get_token?your_account_name. 
+获得免费Token: https://faucet-bos-testnet.keosd.io/get_token/<your_account_name>. 
+
 每一次调用能获得100EOS, 每天最多获得1000个EOS.
 
 例子:
 ``` 
-curl http://13.230.195.142/get_token?111111111ooo
+curl https://faucet-bos-testnet.keosd.io/get_token/111111111ooo
 ```
 
 ## 电报监控地址：

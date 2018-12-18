@@ -13,12 +13,12 @@ cleos wallet import --private-key <private-key>
 
 # step 4: set contract eosio.bios
 
-CONTRACTS_FOLDER='/opt/EOS-Mainnet/eos/build/contracts' 
+CONTRACTS_FOLDER='~/bos.contract-prebuild' 
 cleos set contract eosio ${CONTRACTS_FOLDER}/eosio.bios -p eosio
 
 # step 5: create system accounts
 
-for account in eosio.bpay eosio.msig eosio.names eosio.ram eosio.ramfee eosio.saving eosio.stake eosio.token eosio.vpay eosio.wrap bos.dev bos.gov tklimit.sets
+for account in eosio.bpay eosio.msig eosio.names eosio.ram eosio.ramfee eosio.saving eosio.stake eosio.token eosio.vpay eosio.wrap bos.dev bos.gov tklimit.sets redpacket
 do 
     echo -e "\n creating $account \n"; 
     cleos create account eosio ${account} EOS7hHHDtnPRbhMmfHJHUEKQyiutKrt9wZPdy1JbaATVLyxpCkrop; 
@@ -81,7 +81,7 @@ cleos transfer eosio bos.airdrop "10000000 BOS"
 
 # step 12: resign all system account
 
-for account in eosio.bpay eosio.msig eosio.names eosio.ram eosio.ramfee eosio.saving eosio.stake eosio.token eosio.vpay eosio.wrap bos.dev bos.gov tklimit.sets
+for account in eosio.bpay eosio.msig eosio.names eosio.ram eosio.ramfee eosio.saving eosio.stake eosio.token eosio.vpay eosio.wrap bos.dev bos.gov tklimit.sets redpacket
 do
     cleos  push action eosio updateauth '{"account": "'$account'", "permission": "active", "parent": "owner", "auth":{"threshold": 1, "keys": [], "waits": [], "accounts": [{"weight": 1, "permission": {"actor": "eosio", "permission": active}}]}}' -p ${account}@active
     cleos  push action eosio updateauth '{"account": "'$account'", "permission": "owner", "parent": "",       "auth":{"threshold": 1, "keys": [], "waits": [], "accounts": [{"weight": 1, "permission": {"actor": "eosio", "permission": active}}]}}' -p ${account}@owner
@@ -89,7 +89,7 @@ do
 done
 
 #check system accounts
-for account in eosio.bpay eosio.msig eosio.names eosio.ram eosio.ramfee eosio.saving eosio.stake eosio.token eosio.vpay  eosio.wrap bos.dev bos.gov tklimit.sets
+for account in eosio.bpay eosio.msig eosio.names eosio.ram eosio.ramfee eosio.saving eosio.stake eosio.token eosio.vpay  eosio.wrap bos.dev bos.gov tklimit.sets redpacket
 do 
     echo --- ${account} --- && cleos get account ${account} && sleep 1; 
 done

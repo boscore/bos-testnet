@@ -81,7 +81,7 @@ p2p-peer-address = 35.236.174.234:9902
 p2p-peer-address = 35.236.174.234:9903
 p2p-peer-address = 35.236.174.234:9904
 p2p-peer-address = bos-testnet.meet.one:9876
-
+p2p-peer-address = 47.75.252.36:9878
 ```
 
 
@@ -96,6 +96,7 @@ http://8.208.9.182:80/v1/chain/get_info
 http://47.91.244.124:80/v1/chain/get_info 
 http://120.197.130.117:8020/v1/chain/get_info
 http://bos-testnet.meet.one:8888/v1/chain/get_info
+http://bos-testnet.mytokenpocket.vip:8890/v1/chain/get_info
 ```
 
 API nodes support get actions ( filter-on=* ):
@@ -108,16 +109,22 @@ https://bostest.api.blockgo.vip
 Creating accounts on bostest is pretty simple:
 
 #### Free Account
-Create account using: http://13.230.195.142/create_account?new_account_name
+Create account using: https://faucet-bos-testnet.keosd.io/create/<new_account>.
+
 
 Example:
 ```
-curl http://13.230.195.142/create_account\?111111111ooo
+curl https://faucet-bos-testnet.keosd.io/create/111111111ooo
 ```
 
 
 #### Get Free tokens
-Get free token with: http://13.230.195.142/get_token?your_account_name.   
+Get free token with: https://faucet-bos-testnet.keosd.io/get_token/<your_account_name>.  
+Example
+```
+curl https://faucet-bos-testnet.keosd.io/get_token/111111111ooo
+```
+
 
 ## telegram monitor 
 https://t.me/bosteststatus 
