@@ -13,7 +13,7 @@ cleos wallet import --private-key <private-key>
 
 # step 4: set contract eosio.bios
 
-CONTRACTS_FOLDER='/opt/EOS-Mainnet/eos/build/contracts' 
+CONTRACTS_FOLDER='~/bos.contract-prebuild' 
 cleos set contract eosio ${CONTRACTS_FOLDER}/eosio.bios -p eosio
 
 # step 5: create system accounts
