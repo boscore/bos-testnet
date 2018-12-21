@@ -74,12 +74,6 @@ p2p-peer-address = 8.208.9.182:443
 p2p-peer-address = 47.254.82.241:443
 p2p-peer-address = 47.254.134.167:443
 p2p-peer-address = 149.129.133.66:443
-p2p-peer-address = 35.221.141.101:9878
-p2p-peer-address = 35.221.141.101:9880
-p2p-peer-address = 35.221.141.101:9900
-p2p-peer-address = 35.236.174.234:9902
-p2p-peer-address = 35.236.174.234:9903
-p2p-peer-address = 35.236.174.234:9904
 p2p-peer-address = bos-testnet.meet.one:9876
 p2p-peer-address = 47.75.252.36:9878
 ```
