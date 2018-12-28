@@ -76,6 +76,7 @@ p2p-peer-address = 47.254.82.241:443
 p2p-peer-address = 47.254.134.167:443
 p2p-peer-address = 149.129.133.66:443
 p2p-peer-address = 47.75.252.36:9878
+p2p-peer-address = bos-testnet.eosphere.io:9876
 ```
 
 
@@ -90,6 +91,7 @@ http://8.208.9.182:80/v1/chain/get_info
 http://47.91.244.124:80/v1/chain/get_info
 http://120.197.130.117:8020/v1/chain/get_info
 http://bos-testnet.mytokenpocket.vip:8890/v1/chain/get_info
+https://bos-testnet.eosphere.io/v1/chain/get_info
 ```
 
 支持 `get actions` ( filter-on=* ) 的API:
