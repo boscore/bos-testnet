@@ -18,23 +18,23 @@ cleos set contract eosio ${CONTRACTS_FOLDER}/eosio.bios -p eosio
 
 # step 5: create system accounts
 
-for account in eosio.bpay eosio.msig eosio.names eosio.ram eosio.ramfee eosio.saving eosio.stake eosio.token eosio.vpay eosio.wrap bos.dev bos.gov tklimit.sets redpacket
+for account in eosio.bpay eosio.msig eosio.names eosio.ram eosio.ramfee eosio.saving eosio.stake eosio.token eosio.vpay eosio.wrap bos.dev bos.gov redpacket bos.btc bos.eth bos.eos
 do 
     echo -e "\n creating $account \n"; 
     cleos create account eosio ${account} EOS7hHHDtnPRbhMmfHJHUEKQyiutKrt9wZPdy1JbaATVLyxpCkrop; 
     sleep 1; 
 done
 
-cleos create account eosio bos EOS5oWpvWPYE7GzzJGfqLe9yDHzqrTT1gMiW9cBNftbaze3ZsfCXW
+cleos create account eosio bos EOS7hHHDtnPRbhMmfHJHUEKQyiutKrt9wZPdy1JbaATVLyxpCkrop
 
-for account in   uid bos.stake1 bos.stake2  bos.stake3
+for account in uid bos.stake1 bos.stake2  bos.stake3
 do 
     echo -e "\n creating $account \n"; 
     cleos create account eosio ${account} EOS6Vi3dHtsMrw6gjZvyDRqeDttMhCia4NzH2zQdYbKYErTp5eJud; 
     sleep 1; 
 done
 
-for account in  bos.dapp bos.boost bos.airdrop
+for account in bos.dapp bos.boost bos.airdrop
 do 
     echo -e "\n creating $account \n"; 
     cleos create account eosio ${account} EOS7eXDuaVRSoYjcEgMkADf3VonfXN1TfLwG4Ts9aLxFngsxTep7B; 
@@ -62,6 +62,8 @@ cleos push action eosio setpriv '{"account": "eosio.msig", "is_priv": 1}' -p eos
 # step 9: set contract eosio.system
 
 cleos set contract eosio ${CONTRACTS_FOLDER}/eosio.system -x 1000 -p eosio
+
+cleos push action eosio init '{"version": 0, "core": "4,BOS"}' -p eosio
 
 # step 10: set contract eosio.wrap
 
