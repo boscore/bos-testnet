@@ -67,7 +67,7 @@ cleos push action eosio init '{"version": 0, "core": "4,BOS"}' -p eosio
 
 # step 10: set contract eosio.wrap
 
-cleos set contract eosio.wrap ${CONTRACTS_FOLDER}/eosio.wrap -x 1000 -p eosio
+cleos set contract eosio.wrap ${CONTRACTS_FOLDER}/eosio.wrap -x 1000 -p eosio.wrap
 
 # step 11: transfer some token 
 
