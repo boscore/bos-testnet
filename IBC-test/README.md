@@ -12,7 +12,7 @@ bos-api= -u http://kylin.meet.one:8888
 
 1）从kylin测试网上转出"50.0000 EOS"到BOS测试网上
 ````
-cleos ${kylin-api} transfer  ibckylintest  ibc2token555 "50.0000 BOS" "ibc receiver=boscoretest2" 
+cleos ${kylin-api} transfer  ibckylintest  ibc2token555 "50.0000 EOS" "ibc receiver=boscoretest2" 
 cleos ${kylin-api} get currency balance  eosio.token ibckylintest #减少
 cleos ${kylin-api} get currency balance  eosio.token ibc2token555 #增加 
 ````
@@ -51,7 +51,7 @@ cleos ${bos-api} get currency balance ibc2token555 boscoretest2 #减少10 BOSPS
 ````
 在kylin测试网上查看
 ```
-$cleos ${kylin-api} get currency balance  eosio.token boscoretest2 #增加 10 EOS
+$cleos ${kylin-api} get currency balance  eosio.token ibckylintest #增加 10 EOS
 ```
 
 *说明：由于进行的跨链转账，所以到账时间会有延迟*
