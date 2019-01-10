@@ -9,7 +9,8 @@
 需要用的两个网络的url：
 kylin-api= -u http://bos-testnet.meet.one:8888
 bos-api= -u http://kylin.meet.one:8888
-1） 从kylin测试网上转出"50.0000 EOS"到BOS测试网上
+
+1）从kylin测试网上转出"50.0000 EOS"到BOS测试网上
 ````
 cleos ${kylin-api} transfer  ibckylintest  ibc2token555 "50.0000 BOS" "ibc receiver=boscoretest2" 
 cleos ${kylin-api} get currency balance  eosio.token ibckylintest #减少
