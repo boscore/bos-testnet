@@ -1,6 +1,6 @@
 欢迎来到 bos-testnet
 
-[View in English](README.md)
+[View in English](PBFT-testnet.md)
 
 ## docker images 
 You should update the last version from https://hub.docker.com/r/boscore/bos/tags/
