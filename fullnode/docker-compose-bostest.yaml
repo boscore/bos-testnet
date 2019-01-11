@@ -2,7 +2,7 @@ version: "3"
 
 services:
   nodeosd:
-    image: boscore/bos:latest
+    image: deadlock/eos-dpos-pbft:bos-v0.7.0
     command: /opt/eosio/bin/nodeos --data-dir=/data --config-dir=/etc/nodeos
     hostname: nodeosd
     ports:
