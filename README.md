@@ -78,6 +78,7 @@ p2p-peer-address = bos-testnet.meet.one:9876
 p2p-peer-address = 47.75.252.36:9878
 p2p-peer-address = bos-testnet.eosphere.io:9876
 p2p-peer-address = boscore.eosrio.io:19876
+p2p-peer-address = peer.bostest.alohaeos.com:9876
 ```
 
 
@@ -95,6 +96,7 @@ http://bos-testnet.meet.one:8888/v1/chain/get_info
 http://bos-testnet.mytokenpocket.vip:8890/v1/chain/get_info
 https://bos-testnet.eosphere.io/v1/chain/get_info
 https://boscore.eosrio.io/v1/chain/get_info
+https://api.bostest.alohaeos.com/v1/chain/get_info
 ```
 
 API nodes support get actions ( filter-on=* ):
