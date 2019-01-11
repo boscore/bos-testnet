@@ -1,5 +1,5 @@
 
-[点击查看中文](README_CN.md)
+[点击查看中文](PBFT-testnet-CN.md)
 
 ### docker images 
 You should update the last version from https://hub.docker.com/r/boscore/bos/tags/
