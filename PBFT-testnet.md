@@ -99,20 +99,20 @@ API nodes support get actions ( filter-on=* ):
 Creating accounts on bostest is pretty simple:
 
 #### Free Account
-Create account using: 
+Create account using: https://faucet-bos-lib-testnet.keosd.io/create/"account-name"
 
 
 Example:
 ```
-curl 
+curl https://faucet-bos-lib-testnet.keosd.io/create/bosaccount11
 ```
 
 
 #### Get Free tokens
-Get free token with:  
+Get free token with: https://faucet-bos-lib-testnet.keosd.io/get_token/"account-name" 
 Example
 ```
-
+curl https://faucet-bos-lib-testnet.keosd.io/get_token/bosaccount11
 ```
 
 
