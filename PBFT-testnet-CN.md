@@ -99,7 +99,7 @@ http://139.162.61.239:8111/v1/chain/get_info
 在 `bos` 上创建账号非常简单:
 
 #### 免费账号
-创建免费账号: https://faucet-bos-lib-testnet.keosd.io/create/<account-name>
+创建免费账号: https://faucet-bos-lib-testnet.keosd.io/create/"account-name"
 
 例子:
 ```
@@ -107,7 +107,7 @@ curl https://faucet-bos-lib-testnet.keosd.io/create/bosaccount11
 ```
 
 #### 获得免费Token
-获得免费Token: https://faucet-bos-lib-testnet.keosd.io/get_token<account-name>
+获得免费Token: https://faucet-bos-lib-testnet.keosd.io/get_token/"account-name"
 
 每一次调用能获得100EOS, 每天最多获得1000个EOS.
 
