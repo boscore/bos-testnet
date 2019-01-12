@@ -83,6 +83,7 @@ p2p-peer-address = 45.79.145.205:8849
 p2p-peer-address = 139.162.61.239:8849
 p2p-peer-address = 45.79.145.205:9111
 p2p-peer-address = 139.162.61.239:9111
+p2p-peer-address = bos-bm.blockmatrix.network:13546
 ```
 
 
@@ -92,6 +93,7 @@ API nodes:
 ```
 http://52.194.161.6:9999/v1/chain/get_info 
 http://13.230.195.142:4444/v1/chain/get_info
+http://bos-bm.blockmatrix.network/v1/chain/get_info
 ```
 
 API nodes support get actions ( filter-on=* ):
