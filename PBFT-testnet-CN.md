@@ -3,7 +3,7 @@
 [View in English](PBFT-testnet.md)
 
 ## docker images 
-You should update the last version from https://hub.docker.com/r/boscore/bos/tags/
+You should update the last version from https://hub.docker.com/r/boscore/boslib/tags
 
 ### 克隆项目
 
@@ -66,8 +66,8 @@ docker-compose -f docker-compose-bostest.yaml up -d
 p2p-peer-address = 13.230.195.142:9871
 p2p-peer-address =  52.194.161.6:9877 
 p2p-peer-address = 13.230.195.142:9872 
-p2p-peer-address =  47.244.41.129:448
-p2p-peer-address =  47.244.42.171:548
+p2p-peer-address = 47.244.41.129:448
+p2p-peer-address = 47.244.42.171:548
 p2p-peer-address = 47.91.244.124:448
 p2p-peer-address = 47.254.82.241:448
 p2p-peer-address = 54.197.4.64:9006

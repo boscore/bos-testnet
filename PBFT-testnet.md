@@ -2,7 +2,7 @@
 [点击查看中文](PBFT-testnet-CN.md)
 
 ### docker images 
-You should update the last version from https://hub.docker.com/r/boscore/bos/tags/
+You should update the last version from https://hub.docker.com/r/boscore/boslib/tags
 
 ### Clone project
 
