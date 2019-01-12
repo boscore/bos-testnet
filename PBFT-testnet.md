@@ -4,6 +4,11 @@
 ### docker images 
 You should update the last version from https://hub.docker.com/r/boscore/boslib/tags
 
+## source code
+
+If you want to check code and build by yourself: 
+https://github.com/boscore/bos/tree/feature/bos-dpos-pbft
+
 ### Clone project
 
 ```

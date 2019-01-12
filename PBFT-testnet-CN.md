@@ -5,6 +5,11 @@
 ## docker images 
 You should update the last version from https://hub.docker.com/r/boscore/boslib/tags
 
+## 源码路径 
+
+如果你想查看代码或者自己编译，请获取源码：
+https://github.com/boscore/bos/tree/feature/bos-dpos-pbft
+
 ### 克隆项目
 
 ```
