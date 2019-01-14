@@ -7,8 +7,10 @@
 ## 详细操作
 
 需要用的两个网络的url：
-kylin-api= -u http://bos-testnet.meet.one:8888
-bos-api= -u http://kylin.meet.one:8888
+
+kylin-api= -u http://kylin.meet.one:8888
+
+bos-api= -u http://bos-testnet.meet.one:8888
 
 ### 1) 从kylin测试网上转出"50.0000 EOS"到BOS测试网上
 ````
