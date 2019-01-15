@@ -14,7 +14,7 @@ bos-api= -u http://bos-testnet.meet.one:8888
 
 ### 1) 从kylin测试网上转出"50.0000 EOS"到BOS测试网上
 ````
-cleos ${kylin-api} transfer  ibckylintest  ibc2token555 "50.0000 EOS" "ibc receiver=boscoretest2" 
+cleos ${kylin-api}  transfer  ibctoken2bos  "10.0000 EOS" "boscoretest2@bos notes infomation" -p  ibckylintest
 cleos ${kylin-api} get currency balance  eosio.token ibckylintest #减少
 cleos ${kylin-api} get currency balance  eosio.token ibc2token555 #增加 
 ````
@@ -26,7 +26,8 @@ $cleos ${bos-api} get currency balance  ibc2token555 boscoretest2
 
 ### 2) 从BOS测试网上，转出“50.0000 BOS”到kylin测试网上
 ```
-cleos ${bos-api} transfer boscoretest2  ibc2token555 "50.0000 BOS" "ibc receiver=ibckylintest" 
+cleos ${bos-api} transfer boscoretest2  ibctoken2bos "50.0000 BOS" "boscoretest2@bos notes infomation" -p  ibckylintest
+cleos ${kylin-api}  transfer    "10.0000 EOS" 
 cleos ${bos-api} get currency balance  eosio.token boscoretest2 #减少
 cleos ${bos-api} get currency balance  eosio.token ibc2token555 #增加 
 ```
