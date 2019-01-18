@@ -52,7 +52,7 @@ $cleos ${bos-api} get currency balance  eosio.token boscoretest2 #增加 10 BOS
 
 ### 4) 从BOS测试网上转出"10.0000 EOSPG"到kylin测试网
 ````
-cleos ${bos-api} push action ibctoken2eos transfer '["boscoretest2","ibctoken2eos","10.0000 EOSPG" "ibckylintest@bos notes infomation"]' -p boscoretest2   
+cleos ${bos-api} push action ibctoken2eos transfer '["boscoretest2","ibctoken2eos","10.0000 EOSPG" "ibckylintest@eos notes infomation"]' -p boscoretest2   
 cleos ${bos-api} get currency balance ibctoken2eos boscoretest2 #减少10 BOSPS
 ````
 在kylin测试网上查看
