@@ -2,7 +2,8 @@
 - 中继节点ip
 - 合约名字
 
-
+eos的中继合约账户： ibctoken2bos
+bos的中继合约账户： ibctoken2bos
 
 ## 详细操作
 
@@ -26,21 +27,23 @@ $cleos ${bos-api} get currency balance  ibc2token555 boscoretest2
 
 ### 2) 从BOS测试网上，转出“50.0000 BOS”到kylin测试网上
 ```
-cleos ${bos-api} transfer boscoretest2  ibctoken2bos "50.0000 BOS" "boscoretest2@bos notes infomation" -p  ibckylintest
+cleos ${bos-api} transfer boscoretest2  ibctoken2eos "50.0000 BOS" "boscoretest2@eos notes infomation" -p  ibckylintest
 cleos ${kylin-api}  transfer    "10.0000 EOS" 
 cleos ${bos-api} get currency balance  eosio.token boscoretest2 #减少
-cleos ${bos-api} get currency balance  eosio.token ibc2token555 #增加 
+cleos ${bos-api} get currency balance  eosio.token ibctoken2eos #增加 
 ```
 在kylin测试网上进行查看
 ```
-$cleos ${kylin-api} get currency balance ibc2token555 ibckylintest
+$cleos ${kylin-api} get currency balance ibctoken2bos ibckylintest
 50.0000 BOSPG
 ```
+$cleos1 push action -f ibc2token555 transfer '["chengsong111","ibc2token555","10.0000 BOSPG" "receiverbos1@bos notes infomation"]' -p chengsong111
+    $cleos2 push action -f ibc2token555 transfer '["chengsong111","ibc2token555","10.0000 EOSPG" "receivereos1@eos notes infomation"]' -p chengsong111
 
 ### 3) 从kylin测试网上转出"10.0000 BOSPG"到BOS测试网
 ````
-cleos ${kylin-api} push action ibc2token555 transfer '["ibckylintest","ibc2token555","10.0000 BOSPG" "ibc receiver=boscoretest2"]' -p ibckylintest   
-cleos ${kylin-api} get currency balance ibc2token555 ibckylintest #减少10 BOSPS
+cleos ${kylin-api} push action ibctoken2bos transfer '["ibckylintest","ibctoken2bos","10.0000 BOSPG" "boscoretest2@bos notes infomation"]' -p ibckylintest   
+cleos ${kylin-api} get currency balance ibctoken2bos ibckylintest #减少10 BOSPS
 ````
 在BOS测试网上查看
 ```
@@ -49,8 +52,8 @@ $cleos ${bos-api} get currency balance  eosio.token boscoretest2 #增加 10 BOS
 
 ### 4) 从BOS测试网上转出"10.0000 EOSPG"到kylin测试网
 ````
-cleos ${bos-api} push action ibc2token555 transfer '["boscoretest2","ibc2token555","10.0000 EOSPG" "ibc receiver=ibckylintest"]' -p boscoretest2   
-cleos ${bos-api} get currency balance ibc2token555 boscoretest2 #减少10 BOSPS
+cleos ${bos-api} push action ibctoken2eos transfer '["boscoretest2","ibctoken2eos","10.0000 EOSPG" "ibckylintest@bos notes infomation"]' -p boscoretest2   
+cleos ${bos-api} get currency balance ibctoken2eos boscoretest2 #减少10 BOSPS
 ````
 在kylin测试网上查看
 ```
