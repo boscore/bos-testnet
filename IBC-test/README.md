@@ -1,9 +1,10 @@
 ## 
 - 中继节点ip
-- 合约名字
 
-eos的中继合约账户： ibctoken2bos
-bos的中继合约账户： ibctoken2bos
+### 合约名字
+
+- eos的中继合约账户： ibctoken2bos
+- bos的中继合约账户： ibctoken2eos
 
 ## 详细操作
 
@@ -17,11 +18,11 @@ bos-api= -u http://bos-testnet.meet.one:8888
 ````
 cleos ${kylin-api}  transfer  ibctoken2bos  "10.0000 EOS" "boscoretest2@bos notes infomation" -p  ibckylintest
 cleos ${kylin-api} get currency balance  eosio.token ibckylintest #减少
-cleos ${kylin-api} get currency balance  eosio.token ibc2token555 #增加 
+cleos ${kylin-api} get currency balance  eosio.token ibctoken2bos #增加 
 ````
 在BOS测试网上查看
 ```
-$cleos ${bos-api} get currency balance  ibc2token555 boscoretest2
+$cleos ${bos-api} get currency balance  ibctoken2eos boscoretest2
 100.0000 EOSPG
 ```
 
@@ -37,8 +38,7 @@ cleos ${bos-api} get currency balance  eosio.token ibctoken2eos #增加
 $cleos ${kylin-api} get currency balance ibctoken2bos ibckylintest
 50.0000 BOSPG
 ```
-$cleos1 push action -f ibc2token555 transfer '["chengsong111","ibc2token555","10.0000 BOSPG" "receiverbos1@bos notes infomation"]' -p chengsong111
-    $cleos2 push action -f ibc2token555 transfer '["chengsong111","ibc2token555","10.0000 EOSPG" "receivereos1@eos notes infomation"]' -p chengsong111
+
 
 ### 3) 从kylin测试网上转出"10.0000 BOSPG"到BOS测试网
 ````
