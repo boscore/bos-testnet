@@ -83,7 +83,7 @@ cleos ${kylin-api} get currency balance ibctoken2bos ibckylintesa #增加10 EOSP
 ```
 #cleos ${kylin-api}  push action ibctoken2bos regacpttoken   '["<token-contract>","<max_accept>","<admin-account>","<min_once_transfer>","<max_once_transfer>", "<max_once_transfer>",<max_tfs_per_minute>,"<organization>","<website>","<service_fee_mode>","<service_fee_fixed>",<service_fee_ratio>,"<failed_fee_mode>","<failed_fee_fixed>",<failed_fee_ratio>,<active>,"<peerchain_sym>"]' -p ibctoken2bos
 例如：
-cleos -u http://kylin.fn.eosbixin.com  push action ibctoken2bos regacpttoken   '["eostoretoken","1000000000.0000 EST","eosstoreeost","5.0000 EST","500.0000 EST", "100000.0000 EST",1000,"eos store","www.eosstore.com","fixed","0.1000 EST",0.01,"fixed","0.1000 EST",0.01,true,"4,EST"]' -p ibctoken2bos
+cleos ${kylin-api}  push action ibctoken2bos regacpttoken   '["eostoretoken","1000000000.0000 EST","eosstoreeost","5.0000 EST","500.0000 EST", "100000.0000 EST",1000,"eos store","www.eosstore.com","fixed","0.1000 EST",0.01,"fixed","0.1000 EST",0.01,true,"4,EST"]' -p ibctoken2bos
 ```
 ### 在bos测试网上注册锚定的token的信息
 
