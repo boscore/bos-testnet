@@ -51,7 +51,7 @@ To restart:
 docker-compose -f docker-compose-bostest.yaml down
 docker-compose -f docker-compose-bostest.yaml up -d
 ```
-*it is the same as deploy bos-mainnet.[details](https://github.com/boscore/bos-testnet/blob/master/deploy-mainnetbp.md)*
+*Deployment and operations on the BOS mainnet will be same as above.[details](https://github.com/boscore/bos-testnet/blob/master/deploy-mainnetbp.md)*
 
 ## Chain info
 
