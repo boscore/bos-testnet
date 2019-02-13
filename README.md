@@ -59,6 +59,7 @@ docker-compose -f docker-compose-bostest.yaml up -d
 "chain_id": "33cc2426f1b258ef8c798c34c0360b31732ea27a2d7e35a65797850a86d1ba85"
 
 ```
+*it is the same as deploy bos-mainnet.[details](https://github.com/boscore/bos-testnet/blob/master/deploy-mainnetbp.md)*
 
 ## P2P LIST
 
