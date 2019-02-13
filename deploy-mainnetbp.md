@@ -1,12 +1,12 @@
 # 如何搭建BOS主网的bp节点
 
-操作步骤跟测试网搭建相同，需要在config中修改bp的名字和signature-key
+操作步骤跟测试网搭建相同，需要修改config.ini文件和genesis.json文件
 
 [测试网节点搭建步骤](https://github.com/boscore/bos-testnet/blob/master/README.md)
 
-只需要在config中替换p2p-peer-address和genesis即可
+- 在config中需要操作：替换p2p-peer-address、修改signature-provider、producer-name
 
-- 使用的p2p-peer-address如下：
+使用的p2p-peer-address如下：
 ```
 p2p-peer-address = p2p.bossweden.org:9876
 p2p-peer-address = bos.eosn.io:9876
