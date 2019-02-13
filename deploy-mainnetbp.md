@@ -37,6 +37,4 @@ p2p-peer-address = bos-peer.eosio.sg:9879
 最新接入请参考工具: [eosnation节点统计工具](https://validate.eosnation.io/bos/reports/endpoints.html)
 
 
-- genesis.json
-
-[链接](https://github.com/boscore/bosres/blob/master/genesis.json)
+- [genesis.json](https://github.com/boscore/bosres/blob/master/genesis.json)
