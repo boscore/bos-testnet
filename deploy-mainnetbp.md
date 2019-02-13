@@ -1,6 +1,6 @@
 # 如何搭建BOS主网的bp节点
 
-操作步骤跟测试网搭建相同，需要修改config.ini文件和genesis.json文件
+操作步骤跟测试网搭建相同，需要修改bpnode/config文件夹下面的config.ini文件和genesis.json文件
 
 [测试网节点搭建步骤](https://github.com/boscore/bos-testnet/blob/master/README.md)
 
