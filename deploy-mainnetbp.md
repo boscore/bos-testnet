@@ -38,4 +38,5 @@ p2p-peer-address = bos-peer.eosio.sg:9879
 
 
 - genesis.json
-[genesis.josn链接](https://github.com/boscore/bosres/blob/master/genesis.json)
+
+[链接](https://github.com/boscore/bosres/blob/master/genesis.json)
