@@ -59,6 +59,8 @@ docker-compose -f docker-compose-bostest.yaml up -d
 "chain_id": "33cc2426f1b258ef8c798c34c0360b31732ea27a2d7e35a65797850a86d1ba85"
 
 ```
+*在BOS部署操作是一样的，修改一些内容.[详情](https://github.com/boscore/bos-testnet/blob/master/deploy-mainnetbp.md)*
+
 
 ## P2P 节点列表
 
