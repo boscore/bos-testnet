@@ -40,7 +40,19 @@ p2p-peer-address = bos-peer.eosio.sg:9879
 - [genesis.json](https://github.com/boscore/bosres/blob/master/genesis.json)
 
 
-### 如果需要用快照启动
+### 用快照启动BOS节点
+
+- 优点
+  1. 快速同步节点
+  使用最新快照启动的节点，能够在 3~4 分钟内完成节点同步达到主网高度，时间成本大大降低。
+  
+  2. 节省服务器资源
+  使用快照方式启动的节点，block.log内只会保存节点启动之后的数据，占用的磁盘空间更小。并且用快照启动的 CPU 和 RAM 的使用上都要远远小于全节点。大大降低服务器成本。
+
+- 缺点
+  由于是保存节点启动之后的数据，账户交易的history在之前的无法查到。
+
+
 启动的时候在docker-compose-bostest.yaml文件中增加```--snapshot=xxxx```,例如：
 ```
 version: "3"
