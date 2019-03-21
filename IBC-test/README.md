@@ -1,7 +1,7 @@
 
 ## 在测试网络如何使用跨链转账eos和bos
 - 中继节点ip
-
+- [中继节点搭建和合约部署相关文档](https://github.com/boscore/ibc-test-env/blob/master/bos-plus-kylin-testnets/README.md)
 ### 合约名字
 
 - eos的中继合约账户： ibctoken2bos
