@@ -15,8 +15,8 @@ flag  用于记录当前运行的bp节点是否在master,若是则为true;否则
 ​       假如master_bp ok了，且flag=false,则切换回master节点；
 ​
 ### 使用：
-	1. 首先在bp.json中按实际修改master & slaver 的地址
-	2. 在命令行运行
-	   ```
-	   $ python bpswitch.py bp.json 
-	   ```
+
+1. 首先在bp.json中按实际修改master & slaver 的地址
+2. 在命令行运行
+
+	$ python bpswitch.py bp.json 
