@@ -12,11 +12,12 @@ flag  用于记录当前运行的bp节点是否在master,若是则为true;否则
 ### 线程2:
 ​	线程2拿到全局锁之后：
 ​        假如master_bp不ok且flag=true,直接挑选一个slave并resume，完成切换；
-​       假如master_bp ok了，且flag=false,则切换回master节点；
+​        假如master_bp ok了，且flag=false,则切换回master节点；
 ​
 ### 使用：
 
 1. 首先在bp.json中按实际修改master & slaver 的地址
 2. 在命令行运行
-
+  ```
 	$ python bpswitch.py bp.json 
+  ```
