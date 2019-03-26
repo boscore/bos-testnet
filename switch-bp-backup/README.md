@@ -13,3 +13,10 @@ Flag is used to record whether the currently running bp node is in the master, i
 After thread 2 gets the global lock:
 If master_bp is not ok and flag=true, directly select a slave and resume to complete the switch;
 If master_bp is ok, and flag=false, switch back to the master node;
+
+### Usage :
+1. First, modify the urls of the master server and the slaver servers in the bp.json file
+2. Then run the script below:
+   ```
+	python bpswitch.py bp.json 
+   ```
