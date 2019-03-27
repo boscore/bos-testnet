@@ -1,0 +1,5 @@
+{
+    "master":"https://api.boscore.io",
+    "slaver":["http://test1.eos.io:8891","https://api.boscore.io"],
+    "telegram":{"token":"xxxx","chat_id":"xxx"}
+}
