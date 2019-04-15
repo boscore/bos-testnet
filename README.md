@@ -76,13 +76,6 @@ p2p-peer-address = peer.bostest.alohaeos.com:9876
 
 API nodes:
 ```
-http://47.254.82.241:80/v1/chain/get_info 
-http://47.254.134.167:80/v1/chain/get_info 
-http://49.129.133.66:80/v1/chain/get_info 
-http://8.208.9.182:80/v1/chain/get_info 
-http://47.91.244.124:80/v1/chain/get_info 
-http://120.197.130.117:8020/v1/chain/get_info
-http://bos-testnet.meet.one:8888/v1/chain/get_info
 http://bos-testnet.mytokenpocket.vip:8890/v1/chain/get_info
 https://bos-testnet.eosphere.io/v1/chain/get_info
 https://boscore.eosrio.io/v1/chain/get_info
