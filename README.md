@@ -66,18 +66,6 @@ docker-compose -f docker-compose-bostest.yaml up -d
 
 ```
 p2p-peer-address = 13.230.195.142:9866
-p2p-peer-address = 120.197.130.117:9020
-p2p-peer-address = 120.197.130.117:9021
-p2p-peer-address = 120.197.130.117:9022
-p2p-peer-address = 120.197.130.117:9023
-p2p-peer-address = 120.197.130.117:9024
-p2p-peer-address = 47.91.244.124:443
-p2p-peer-address = 8.208.9.182:443
-p2p-peer-address = 47.254.82.241:443
-p2p-peer-address = 47.254.134.167:443
-p2p-peer-address = 149.129.133.66:443
-p2p-peer-address = bos-testnet.meet.one:9876
-p2p-peer-address = 47.75.252.36:9878
 p2p-peer-address = bos-testnet.eosphere.io:9876
 p2p-peer-address = boscore.eosrio.io:19876
 p2p-peer-address = peer.bostest.alohaeos.com:9876
