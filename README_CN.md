@@ -65,9 +65,13 @@ docker-compose -f docker-compose-bostest.yaml up -d
 ## P2P 节点列表
 
 ```
-p2p-peer-address = 13.228.252.160:9876
-p2p-peer-address = 47.88.155.76:9876 
+p2p-peer-address = 13.230.195.142:9866
+p2p-peer-address = 47.88.155.76:9876
+p2p-peer-address = 47.75.242.50:9876
 p2p-peer-address = bos-testnet.eosphere.io:9876
+p2p-peer-address = bostest.eosn.io:9876
+p2p-peer-address = tst.bossweden.org:9899
+p2p-peer-address = bos.testnet.eosargentina.io:9876
 p2p-peer-address = peer.bostest.alohaeos.com:9876
 ```
 
@@ -78,12 +82,15 @@ API nodes:
 ```
 http://bos-testnet.mytokenpocket.vip:8890/v1/chain/get_info
 https://bos-testnet.eosphere.io/v1/chain/get_info
+https://boscore.eosrio.io/v1/chain/get_info
 https://api.bostest.alohaeos.com/v1/chain/get_info
 ```
 
 支持 `get actions` ( filter-on=* ) 的API:
 ```
-https://bostest.api.blockgo.vip
+http://bostest.api.blockgo.vip
+https://boscore.eosrio.io/v1/history/ (MongoDB based)
+https://history-api-bos-testnet.keosd.io/v1/history/ (MongoDB based)
 ```
 
 ## 水龙头
