@@ -67,8 +67,11 @@ docker-compose -f docker-compose-bostest.yaml up -d
 ```
 p2p-peer-address = 13.230.195.142:9866
 p2p-peer-address = 47.88.155.76:9876
+p2p-peer-address = 47.75.242.50:9876
 p2p-peer-address = bos-testnet.eosphere.io:9876
-p2p-peer-address = boscore.eosrio.io:19876
+p2p-peer-address = bostest.eosn.io:9876
+p2p-peer-address = tst.bossweden.org:9899
+p2p-peer-address = bos.testnet.eosargentina.io:9876
 p2p-peer-address = peer.bostest.alohaeos.com:9876
 ```
 
@@ -85,7 +88,7 @@ https://api.bostest.alohaeos.com/v1/chain/get_info
 
 API nodes support get actions ( filter-on=* ):
 ```
-https://bostest.api.blockgo.vip
+http://bostest.api.blockgo.vip
 https://boscore.eosrio.io/v1/history/ (MongoDB based)
 https://history-api-bos-testnet.keosd.io/v1/history/ (MongoDB based)
 ```
