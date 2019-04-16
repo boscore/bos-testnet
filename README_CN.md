@@ -65,6 +65,8 @@ docker-compose -f docker-compose-bostest.yaml up -d
 ## P2P 节点列表
 
 ```
+p2p-peer-address = 13.228.252.160:9876
+p2p-peer-address = 47.88.155.76:9876 
 p2p-peer-address = bos-testnet.eosphere.io:9876
 p2p-peer-address = peer.bostest.alohaeos.com:9876
 ```
