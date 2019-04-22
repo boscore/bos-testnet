@@ -88,7 +88,7 @@ https://api.bostest.alohaeos.com/v1/chain/get_info
 
 支持 `get actions` ( filter-on=* ) 的API:
 ```
-http://bostest.api.blockgo.vip
+https://bostest.api.blockgo.vip
 https://boscore.eosrio.io/v1/history/ (MongoDB based)
 https://history-api-bos-testnet.keosd.io/v1/history/ (MongoDB based)
 ```
