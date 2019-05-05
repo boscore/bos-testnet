@@ -94,7 +94,16 @@ API nodes support get actions ( filter-on=* ):
 https://bostest.api.blockgo.vip
 https://boscore.eosrio.io/v1/history/ (MongoDB based)
 https://history-api-bos-testnet.keosd.io/v1/history/ (MongoDB based)
+http://bos-test.eoshenzhen.io:8888/v1/chain/get_info
 ```
+
+State History Support:
+
+```
+http://sh-bostest.eoshenzhen.io:8088
+```
+
+
 
 ## Faucet
 

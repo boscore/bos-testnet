@@ -96,6 +96,14 @@ https://boscore.eosrio.io/v1/history/ (MongoDB based)
 https://history-api-bos-testnet.keosd.io/v1/history/ (MongoDB based)
 ```
 
+State History Support:
+
+```
+http://sh-bostest.eoshenzhen.io:8088
+```
+
+
+
 ## 水龙头
 
 在 `bos` 上创建账号非常简单:
