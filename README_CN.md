@@ -74,6 +74,7 @@ p2p-peer-address = bostest.eosn.io:9876
 p2p-peer-address = tst.bossweden.org:9899
 p2p-peer-address = bos.testnet.eosargentina.io:9876
 p2p-peer-address = peer.bostest.alohaeos.com:9876
+p2p-peer-address = bos-test.eoshenzhen.io:9876
 ```
 
 
@@ -85,6 +86,7 @@ http://bos-testnet.mytokenpocket.vip:8890/v1/chain/get_info
 https://bos-testnet.eosphere.io/v1/chain/get_info
 https://boscore.eosrio.io/v1/chain/get_info
 https://api.bostest.alohaeos.com/v1/chain/get_info
+http://bos-test.eoshenzhen.io:8888/v1/chain/get_info
 ```
 
 支持 `get actions` ( filter-on=* ) 的API:
