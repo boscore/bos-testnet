@@ -16,6 +16,7 @@ fullnode 和 bpnode的主要区别是bpnode 的config中增加了producer_plugin
 ### 5秒之内搭建一个全节点
 
 ```
+cd bos-testnet
 ./run.sh
 ```
 

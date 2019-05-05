@@ -14,6 +14,7 @@ The diffrence between fullnode and bpnode is the config.ini bpnode have producer
 ### Setup a fullnode in 5 seconds using the shell
 
 ```
+cd bos-testnet
 ./run.sh
 ```
 
