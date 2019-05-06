@@ -14,6 +14,7 @@ The diffrence between fullnode and bpnode is the config.ini bpnode have producer
 ### Setup a fullnode in 5 seconds using the shell
 
 ```
+cd bos-testnet/
 ./run.sh
 ```
 
@@ -73,6 +74,7 @@ p2p-peer-address = bostest.eosn.io:9876
 p2p-peer-address = tst.bossweden.org:9899
 p2p-peer-address = bos.testnet.eosargentina.io:9876
 p2p-peer-address = peer.bostest.alohaeos.com:9876
+p2p-peer-address = bos-test.eoshenzhen.io:9876
 ```
 
 
@@ -84,6 +86,7 @@ http://bos-testnet.mytokenpocket.vip:8890/v1/chain/get_info
 https://bos-testnet.eosphere.io/v1/chain/get_info
 https://boscore.eosrio.io/v1/chain/get_info
 https://api.bostest.alohaeos.com/v1/chain/get_info
+http://bos-test.eoshenzhen.io:8888/v1/chain/get_info
 ```
 
 API nodes support get actions ( filter-on=* ):
@@ -91,7 +94,16 @@ API nodes support get actions ( filter-on=* ):
 https://bostest.api.blockgo.vip
 https://boscore.eosrio.io/v1/history/ (MongoDB based)
 https://history-api-bos-testnet.keosd.io/v1/history/ (MongoDB based)
+http://bos-test.eoshenzhen.io:8888/v1/chain/get_info
 ```
+
+State History Support:
+
+```
+http://sh-bostest.eoshenzhen.io:8088
+```
+
+
 
 ## Faucet
 
