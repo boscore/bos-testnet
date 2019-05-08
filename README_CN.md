@@ -66,7 +66,7 @@ docker-compose -f docker-compose-bostest.yaml up -d
 ## P2P 节点列表
 
 ```
-p2p-peer-address = 13.230.195.142:9866
+p2p-peer-address = 13.230.195.142:9234
 p2p-peer-address = 47.88.155.76:9876
 p2p-peer-address = 47.75.242.50:9876
 p2p-peer-address = bos-testnet.eosphere.io:9876
@@ -82,7 +82,6 @@ p2p-peer-address = bos-test.eoshenzhen.io:9876
 
 API nodes:
 ```
-http://bos-testnet.mytokenpocket.vip:8890/v1/chain/get_info
 https://bos-testnet.eosphere.io/v1/chain/get_info
 https://boscore.eosrio.io/v1/chain/get_info
 https://api.bostest.alohaeos.com/v1/chain/get_info
