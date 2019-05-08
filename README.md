@@ -82,7 +82,6 @@ p2p-peer-address = bos-test.eoshenzhen.io:9876
 
 API nodes:
 ```
-http://bos-testnet.mytokenpocket.vip:8890/v1/chain/get_info
 https://bos-testnet.eosphere.io/v1/chain/get_info
 https://boscore.eosrio.io/v1/chain/get_info
 https://api.bostest.alohaeos.com/v1/chain/get_info
