@@ -66,7 +66,7 @@ docker-compose -f docker-compose-bostest.yaml up -d
 ## P2P LIST
 
 ```
-p2p-peer-address = 13.230.195.142:9866
+p2p-peer-address = 13.230.195.142:9234
 p2p-peer-address = 47.88.155.76:9876
 p2p-peer-address = 47.75.242.50:9876
 p2p-peer-address = bos-testnet.eosphere.io:9876
