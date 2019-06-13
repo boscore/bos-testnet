@@ -52,7 +52,8 @@ To restart:
 docker-compose -f docker-compose-bostest.yaml down
 docker-compose -f docker-compose-bostest.yaml up -d
 ```
-*The deployment of BOSMainnet check [deploy-mainnetbp.md](deploy-mainnetbp.md)*
+
+# The deployment of BOSMainnet check [deploy-mainnetbp-EN.md](deploy-mainnetbp-EN.md)
 
 ## Chain info
 
