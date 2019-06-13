@@ -54,7 +54,8 @@ docker-compose -f docker-compose-bostest.yaml down
 docker-compose -f docker-compose-bostest.yaml down
 docker-compose -f docker-compose-bostest.yaml up -d
 ```
-*在BOS主网部署操作是一样的，修改一些内容.[详情](https://github.com/boscore/bos-testnet/blob/master/deploy-mainnetbp.md)*
+
+# 在BOS主网部署操作是一样的，修改一些内容.[详情](https://github.com/boscore/bos-testnet/blob/master/deploy-mainnetbp.md)*
 
 ## 链信息
 
