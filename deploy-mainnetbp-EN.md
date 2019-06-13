@@ -1,5 +1,8 @@
 # How to build  BP-node of  BOS Mainnet
 
+- [English](deploy-mainnetbp-EN.md)
+- [中文](deploy-mainnetbp.md)
+
 ### Operation steps are the same as BOS Testnet，but need to modify bpnode/config/config.ini and genesis.json
 
 [BOS Testnet node build steps](https://github.com/boscore/bos-testnet/blob/master/README.md)
