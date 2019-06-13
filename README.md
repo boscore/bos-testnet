@@ -53,7 +53,7 @@ docker-compose -f docker-compose-bostest.yaml down
 docker-compose -f docker-compose-bostest.yaml up -d
 ```
 
-# The deployment of BOSMainnet check [deploy-mainnetbp-EN.md](deploy-mainnetbp-EN.md)
+# The deployment of BOSMainnet check [Detial](deploy-mainnetbp-EN.md)
 
 ## Chain info
 
