@@ -103,7 +103,7 @@ HISTORY API nodes support get actions ( filter-on=* ):
 ```
 https://bostest.api.blockgo.vip
 https://boscore.eosrio.io/v1/history/ (MongoDB based)
-https://history-api-bos-testnet.keosd.io/v1/history/ (MongoDB based)
+https://bos-test.keosd.io/v1/history/ (MongoDB based)
 https://bos-test.eoshenzhen.io:7443/v1/history/
 ```
 

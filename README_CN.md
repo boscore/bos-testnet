@@ -103,7 +103,7 @@ http://47.88.155.76:9876/v1/chain/get_info
 ```
 https://bostest.api.blockgo.vip
 https://boscore.eosrio.io/v1/history/ (MongoDB based)
-https://history-api-bos-testnet.keosd.io/v1/history/ (MongoDB based)
+https://bos-test.keosd.io/v1/history/ (MongoDB based)
 ```
 
 State History Support:
