@@ -92,10 +92,10 @@ https://boscore.eosrio.io/v1/chain/get_info
 https://api.bostest.alohaeos.com/v1/chain/get_info
 http://bos-test.eoshenzhen.io:8888/v1/chain/get_info
 https://bos-test.eoshenzhen.io:7443/v1/chain/get_info
-http://47.252.81.49:9876/v1/chain/get_info
-http://47.252.80.188:9876/v1/chain/get_info
-http://47.245.53.152:9876/v1/chain/get_info
-http://47.245.31.246:9876/v1/chain/get_info
+http://47.252.81.49:8888/v1/chain/get_info
+http://47.252.80.188:8888/v1/chain/get_info
+http://47.245.53.152:8888/v1/chain/get_info
+http://47.245.31.246:8888/v1/chain/get_info
 ```
 
 HISTORY API nodes support get actions ( filter-on=* ):
