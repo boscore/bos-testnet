@@ -70,6 +70,10 @@ docker-compose -f docker-compose-bostest.yaml up -d
 p2p-peer-address = 13.230.195.142:9234
 p2p-peer-address = 47.88.155.76:9876
 p2p-peer-address = 47.75.242.50:9876
+p2p-peer-address = 47.252.81.49:9876
+p2p-peer-address = 47.252.80.188:9876
+p2p-peer-address = 47.245.53.152:9876
+p2p-peer-address = 47.245.31.246:9876
 p2p-peer-address = bos-testnet.eosphere.io:9876
 p2p-peer-address = bostest.eosn.io:9876
 p2p-peer-address = tst.bossweden.org:9899
@@ -88,6 +92,10 @@ https://boscore.eosrio.io/v1/chain/get_info
 https://api.bostest.alohaeos.com/v1/chain/get_info
 http://bos-test.eoshenzhen.io:8888/v1/chain/get_info
 https://bos-test.eoshenzhen.io:7443/v1/chain/get_info
+http://47.252.81.49:9876/v1/chain/get_info
+http://47.252.80.188:9876/v1/chain/get_info
+http://47.245.53.152:9876/v1/chain/get_info
+http://47.245.31.246:9876/v1/chain/get_info
 ```
 
 HISTORY API nodes support get actions ( filter-on=* ):
