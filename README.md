@@ -80,6 +80,7 @@ p2p-peer-address = tst.bossweden.org:9899
 p2p-peer-address = bos.testnet.eosargentina.io:9876
 p2p-peer-address = peer.bostest.alohaeos.com:9876
 p2p-peer-address = bos-test.eoshenzhen.io:9876
+p2p-peer-address = 47.90.101.71:443
 ```
 
 
