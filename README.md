@@ -76,6 +76,10 @@ p2p-peer-address = bos-test.eosdac.io:39877
 p2p-peer-address = 47.88.155.76:9877
 p2p-peer-address = bostestnet.eoscafeblock.com:9877
 p2p-peer-address = test-bos.atticlab.net:10876
+p2p-peer-address = 47.252.81.49:9876
+p2p-peer-address = 47.252.80.188:9876
+p2p-peer-address = 47.245.53.152:9876
+p2p-peer-address = 47.245.31.246:9876
 ```
 
 
@@ -83,7 +87,6 @@ p2p-peer-address = test-bos.atticlab.net:10876
 
 API nodes:
 ```
-https://bos-testnet.eosphere.io/v1/chain/get_info
 https://boscore.eosrio.io/v1/chain/get_info
 https://api.bostest.alohaeos.com/v1/chain/get_info
 http://bos-test.eoshenzhen.io:8888/v1/chain/get_info
