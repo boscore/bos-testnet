@@ -1,3 +1,14 @@
+## Please join testnet telegram group:
+https://t.me/BOSTestnet
+
+BOS Tesnet monitor：
+https://t.me/bosteststatus 
+
+BOS Testnet explorer:
+- https://bos-test.bloks.io/
+- https://bos-test.eosx.io/
+- https://local.bloks.io/?nodeUrl=bos-test.eospacex.com&coreSymbol=BOS
+
 
 [点击查看中文](README_CN.md)
 
@@ -77,11 +88,13 @@ p2p-peer-address = 47.88.155.76:9877
 p2p-peer-address = bostestnet.eoscafeblock.com:9877
 p2p-peer-address = test-bos.atticlab.net:10876
 p2p-peer-address = 47.252.81.49:9876
-p2p-peer-address = 47.252.80.188:9876
+p2p-peer-address = 47.90.241.6:9876
 p2p-peer-address = 47.245.53.152:9876
 p2p-peer-address = 47.245.31.246:9876
 p2p-peer-address = peer.bostest.alohaeos.com:9876
 p2p-peer-address = bos-test.eoshenzhen.io:9876
+p2p-peer-address = bos-testnet.eosamsterdam.xeos.me:9899
+p2p-peer-address = bos-test.eosdac.io:39877
 ```
 
 
@@ -135,8 +148,4 @@ Example
 ```
 curl https://faucet-bos-testnet.keosd.io/get_token/111111111ooo
 ```
-
-
-## telegram monitor 
-https://t.me/bosteststatus 
 

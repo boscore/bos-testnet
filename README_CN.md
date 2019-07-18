@@ -1,5 +1,14 @@
+## 请进电报：
+https://t.me/BOSTestnet
 
-欢迎来到 bos-testnet
+BOS Tesnet监控地址：
+https://t.me/bosteststatus 
+
+BOS Testnet 浏览器:
+- https://bos-test.bloks.io/
+- https://bos-test.eosx.io/
+- https://local.bloks.io/?nodeUrl=bos-test.eospacex.com&coreSymbol=BOS
+  
 
 [View in English](README.md)
 
@@ -67,20 +76,23 @@ docker-compose -f docker-compose-bostest.yaml up -d
 ## P2P 节点列表
 
 ```
-p2p-peer-address = 13.230.195.142:9234
-p2p-peer-address = 47.88.155.76:9876
-p2p-peer-address = 47.75.242.50:9876
-p2p-peer-address = bos-testnet.eosphere.io:9876
-p2p-peer-address = bostest.eosn.io:9876
-p2p-peer-address = tst.bossweden.org:9899
-p2p-peer-address = bos.testnet.eosargentina.io:9876
-p2p-peer-address = peer.bostest.alohaeos.com:9876
-p2p-peer-address = bos-test.eoshenzhen.io:9876
+p2p-peer-address = 47.90.101.71:443
+p2p-peer-address = 52.69.198.164:9003
+p2p-peer-address = 34.80.177.78:9876
+p2p-peer-address = 52.69.198.164:9003
+p2p-peer-address = br.eosrio.io:29876
+p2p-peer-address = bos-test.eosdac.io:39877
+p2p-peer-address = 47.88.155.76:9877
+p2p-peer-address = bostestnet.eoscafeblock.com:9877
+p2p-peer-address = test-bos.atticlab.net:10876
 p2p-peer-address = 47.252.81.49:9876
-p2p-peer-address = 47.252.80.188:9876
+p2p-peer-address = 47.90.241.6:9876
 p2p-peer-address = 47.245.53.152:9876
 p2p-peer-address = 47.245.31.246:9876
-p2p-peer-address = 47.90.101.71:443
+p2p-peer-address = peer.bostest.alohaeos.com:9876
+p2p-peer-address = bos-test.eoshenzhen.io:9876
+p2p-peer-address = bos-testnet.eosamsterdam.xeos.me:9899
+p2p-peer-address = bos-test.eosdac.io:39877
 ```
 
 
@@ -136,8 +148,6 @@ curl https://faucet-bos-testnet.keosd.io/create/111111111ooo
 curl https://faucet-bos-testnet.keosd.io/get_token/111111111ooo
 ```
 
-## 电报监控地址：
- https://t.me/bosteststatus 
 
 
 
