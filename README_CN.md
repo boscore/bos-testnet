@@ -85,10 +85,8 @@ p2p-peer-address = bos-test.eosdac.io:39877
 p2p-peer-address = 47.88.155.76:9877
 p2p-peer-address = bostestnet.eoscafeblock.com:9877
 p2p-peer-address = test-bos.atticlab.net:10876
-p2p-peer-address = 47.252.81.49:9876
-p2p-peer-address = 47.90.241.6:9876
-p2p-peer-address = 47.245.53.152:9876
-p2p-peer-address = 47.245.31.246:9876
+p2p-peer-address = peer01-bostest.blockzone.net:543
+p2p-peer-address = peer02-bostest.blockzone.net:543
 p2p-peer-address = peer.bostest.alohaeos.com:9876
 p2p-peer-address = bos-test.eoshenzhen.io:9876
 p2p-peer-address = bos-testnet.eosamsterdam.xeos.me:9899
@@ -100,19 +98,16 @@ p2p-peer-address = bos-test.eosdac.io:39877
 
 API nodes:
 ```
+https://api-bostest.blockzone.net/v1/chain/get_info
 https://bos-testnet.eosphere.io/v1/chain/get_info
 https://boscore.eosrio.io/v1/chain/get_info
 https://api.bostest.alohaeos.com/v1/chain/get_info
 http://bos-test.eoshenzhen.io:8888/v1/chain/get_info
-http://47.252.81.49:8888/v1/chain/get_info
-http://47.245.53.152:8888/v1/chain/get_info
-http://47.245.31.246:8888/v1/chain/get_info
-http://47.88.155.76:9876/v1/chain/get_info
 ```
 
 支持 `get actions` ( filter-on=* ) 的API:
 ```
-https://bostest.api.blockgo.vip
+https://api-bostest.blockzone.net
 https://boscore.eosrio.io/v1/history/ (MongoDB based)
 https://bos-test.keosd.io/v1/history/ (MongoDB based)
 ```
@@ -122,7 +117,6 @@ State History Support:
 ```
 http://sh-bostest.eoshenzhen.io:8088
 ```
-
 
 
 ## 水龙头
