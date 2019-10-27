@@ -103,43 +103,32 @@ API nodes:
 https://api-bostest.blockzone.net
 https://boscore.eosrio.io/v1/chain/get_info
 https://api.bostest.alohaeos.com/v1/chain/get_info
-http://bos-test.eoshenzhen.io:8888/v1/chain/get_info
 https://bos-test.eoshenzhen.io:7443/v1/chain/get_info
 ```
 
 HISTORY API nodes support get actions ( filter-on=* ):
 ```
 https://api-bostest.blockzone.net
-https://bostest.api.blockgo.vip
 https://boscore.eosrio.io/v1/history/ (MongoDB based)
-https://bos-test.keosd.io/v1/history/ (MongoDB based)
-https://bos-test.eoshenzhen.io:7443/v1/history/
 ```
-
-State History Support:
-
-```
-http://sh-bostest.eoshenzhen.io:8088
-```
-
 
 ## Faucet
 
 Creating accounts on bostest is pretty simple:
 
 #### Free Account
-Create account using: https://faucet-bos-testnet.keosd.io/create/<new_account>.
+Create account using: http://faucet-bostest.blockzone.net/create/<new_account>.
 
 
 Example:
 ```
-curl https://faucet-bos-testnet.keosd.io/create/111111111ooo
+curl http://faucet-bostest.blockzone.net/create/111111111ooo
 ```
 
 #### Get Free tokens
-Get free token with: https://faucet-bos-testnet.keosd.io/get_token/<your_account_name>.  
+Get free token with: http://faucet-bostest.blockzone.net/get_token/<your_account_name>.  
 Example
 ```
-curl https://faucet-bos-testnet.keosd.io/get_token/111111111ooo
+curl http://faucet-bostest.blockzone.net/get_token/111111111ooo
 ```
 
