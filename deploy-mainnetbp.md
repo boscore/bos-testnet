@@ -11,33 +11,27 @@
 
 使用的p2p-peer-address如下：
 ```
-p2p-peer-address = p2p.bossweden.org:9876
-p2p-peer-address = bos.eosn.io:9876
-p2p-peer-address = bos.caleos.io:9882
-p2p-peer-address = bosmatrix.blockmatrix.network:13546
-p2p-peer-address = bos-peer.meet.one:9876
-p2p-peer-address = bos.tokenpocket.pro:9376
-p2p-peer-address = p2p.bos.eosrio.io:9876
-p2p-peer-address = bosp2p.api.blockgo.vip:666
-p2p-peer-address = bos.caleos.io:9882
-p2p-peer-address = bos.eosn.io:9876
-p2p-peer-address = p2p.bossweden.org:9876
-p2p-peer-address = p2p.boscaribbean.com:9876
-p2p-peer-address= peer-bos.oraclechain.io:19877
-p2p-peer-address= api.bos42.io:9877
-p2p-peer-address = peer1-bos.eosphere.io:9876
+p2p-peer-address = peer.bos.alohaeos.com:9876
 p2p-peer-address = bos.atticlab.net:10987
-p2p-peer-address = bos-node.eosauthority.com:9393
+p2p-peer-address = peer01-bos.blockzone.net:543
+p2p-peer-address = peer02-bos.blockzone.net:543
+p2p-peer-address = p2p-bos.eosbeijing.one:6001
+p2p-peer-address = bosp2p.eoscafeblock.com:9070
+p2p-peer-address = bos.eosn.io:9876
 p2p-peer-address = p2p.bos.nodepacific.com:9876
-p2p-peer-address = 47.91.211.240:443
-p2p-peer-address = 47.91.225.161:443
-p2p-peer-address = peer-bos.eospacex.com:88
-p2p-peer-address = bos-peer.eosio.sg:9879
-p2p-peer-address = bos.eosargentina.io:9876
-p2p-peer-address =bosapi-two.eosstore.co:9871
-p2p-peer-address = bos-peer.eosio.sg:9879
+p2p-peer-address = peer1-bos.eosphere.io:9876
+p2p-peer-address = p2p.bos.eosrio.io:9876
+p2p-peer-address = api.bos.eostribe.io:9310
+p2p-peer-address = bos.cryptolions.io:1987
+p2p-peer-address = bos.csx.io:9876
+p2p-peer-address = peering.bos.dapp.pub:9876
+p2p-peer-address = peering.bos.eoscanada.com:9876
+p2p-peer-address = p2p.hellobos.one:9876
+p2p-peer-address = bos.tokenpocket.pro:9376
+p2p-peer-address = bos-peer.slowmist.io:19876
+
 ```
-最新接入请参考工具: [eosnation节点统计工具](https://validate.eosnation.io/bos/reports/endpoints.html)
+最新接入点请参考工具: [eosnation节点统计工具](https://validate.eosnation.io/bos/reports/endpoints.html)
 
 
 - [genesis.json](https://github.com/boscore/bosres/blob/master/genesis.json)
